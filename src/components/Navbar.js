@@ -15,7 +15,7 @@ const Navbar = () => {
                     </IconContext.Provider>
                 </span>
                 <span>
-                    <IconContext.Provider value={{color:'#000', size:'18px', className:'icons_container'}}>
+                    <IconContext.Provider value={{color:'#000', size:'18px'}}>
                         <div className='icon'><FaCalendar/></div>
                         hello@gmail.com
                         

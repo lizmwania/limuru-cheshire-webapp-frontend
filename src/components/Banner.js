@@ -1,15 +1,17 @@
 import React from 'react';
 import { FaStar, FaChevronCircleRight } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import img from '../images/image1.svg'
 
 const Banner = () => {
     return (
         <div className='content_wrapper'>
             <div className='left_content_wrapper'>
                 <h2>
-                    <span>LOrem Lipsum</span>
-                    <span>Trying to create something</span>
-
+                    <span>Lorem Lipsum is always trying 
+                        <br/>
+                        to design and build
+                    </span>
                 </h2>
                 <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
@@ -36,7 +38,7 @@ const Banner = () => {
             </div>
             
             <div className='right_content_wrapper'>
-                <img src='' />
+                <img src={img} alt='bg' />
             </div>
 
 

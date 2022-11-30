@@ -65,11 +65,17 @@ header{
                 }
             }
             &:nth-child(1){
+                width: 22%;
+            }
+            &:nth-child(2){
                 width: 42%;
                 .icon{
                     margin-right: 20px;
                 }
             }
+            
+                
+            
             &.menu{
                 @extend .dflex;
                 width: 56px;
@@ -108,7 +114,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: $light_green;
-    clip-path: polygon(0 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     border-radius: 16px;
     padding: 3%;
     .left_container_wrapper{
@@ -120,14 +126,15 @@ header{
             overflow: hidden;
             span{
                 display: inline-block;
-                span.second{
-                    margin-left: 15px;
-                }
+                // span.second{
+                //     margin-left: 15px;
+                // }
             }
         }
         p{
             font-size: 1.2vw;
             color: #333;
+            margin: 20px 0 30px 0;
         }
         .btn_group{
             @extend .dflex;
