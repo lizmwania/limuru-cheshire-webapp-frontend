@@ -1,6 +1,6 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { FaDribbble, FaBehance, FaCalendar } from 'react-icons/fa';
+import { FaDribbble, FaBehance, FaCalendar, FaHeart, FaHome } from 'react-icons/fa';
 // import { IconContext } from 'react-icons/lib';
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='menu_container'>
                 <span>
                     <IconContext.Provider value={{color:'#000', size:'18px', className:'icons_container'}} >
-                        <div className='icon'> <FaBehance/> </div>
+                        <div className='icon'> <FaHome/> </div>
                         <div className='icon'> <FaDribbble/> </div>
                     </IconContext.Provider>
                 </span>
@@ -21,10 +21,11 @@ const Navbar = () => {
                         
                     </IconContext.Provider>
                 </span>
-                <span className='menu'>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <span className='donate_menu'>
+                    <IconContext.Provider value={{ color:'white', size:'15px' }}>
+                        <FaHeart />
+                    </IconContext.Provider>
+                    Donate 
                 </span>
             </div>       
         </header>

@@ -8,10 +8,9 @@ const Banner = () => {
         <div className='content_wrapper'>
             <div className='left_content_wrapper'>
                 <h2>
-                    <span>Lorem Lipsum is always trying 
-                        <br/>
-                        to design and build
-                    </span>
+                    <span> We reach <span className='second'>marginalized</span></span>
+                    <span> Vulnarable, <span className='second'>disabled</span></span>
+                    
                 </h2>
                 <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
@@ -23,10 +22,10 @@ const Banner = () => {
                             <FaChevronCircleRight />
                         </IconContext.Provider>
                     </div>
-                    <div className='btn btn_secondary'>Here</div>
+                    <div className='btn btn_secondary'>Here chat</div>
                 </div>
                 <div className='review_container'>
-                    <p className='total_review'>64+</p>
+                    <p className='total_review'> 64+ Reviews </p>
                     <IconContext.Provider value={{color:'black', size:'18px'}}>
                         <span> <FaStar/> </span>
                         <span> <FaStar/> </span>
