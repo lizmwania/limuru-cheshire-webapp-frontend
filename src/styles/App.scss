@@ -20,12 +20,15 @@ body{
     height: 100%;
     background-color: $white;
     overflow-x: hidden;
+     
+   
 }
 header{
     @extend .dflex;
     justify-content: space-between;
     padding: 0 13%;
-    height: 120px;
+    height: 100px;
+    border-bottom: 1px solid $dark_green;
 
     .logo_wrapper{
         font-size: 32px;
@@ -37,49 +40,31 @@ header{
 
     .menu_container{
         @extend .dflex;
-        justify-content: flex-end;
         width: 600px;
         height: 56px;
+        justify-content: space-between;
+        // flex-direction: row;
+        .link{
+            cursor: pointer;
+            // display: flex;
+            // gap: 10px;
+            // align-items: center;
+        }
         span{
             display: inline-flex;
             align-items: center;
             justify-content: flex-start;
             position: relative;
             height: 100%;
-            +span{
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 2px;
-                    height: 50%;
-                    background-color: #bdbdbd;
-                    left: -36px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            .icon{
-                display: inline-flex;
-                +.icon{
-                    margin-left: 20px;
-                }
-            }
-            &:nth-child(1){
-                width: 22%;
-            }
-            &:nth-child(2){
-                width: 42%;
-                .icon{
-                    margin-right: 20px;
-                }
-            }
+          
+           
             
                 
             
             &.donate_menu{
                 @extend .dflex;
                 width: fit-content;
-                height: 50px;
+                height: 40px;
                 background-color: $dark_green;
                 color: $white;
                 border-radius: 8px;
@@ -87,23 +72,7 @@ header{
                 cursor: pointer;
                 flex-direction: row;
                 justify-content: space-between;
-                // span{
-                //     display: block;
-                //     width: 20px;
-                //     height: 3px;
-                //     background-color: red;
-                //     border-radius: 3px;
-                //     position: relative;
-                //     +span{
-                //         margin-top: 5px;
-                //         &::before{
-                //             content: none;
-                //         }
-                //     }
-                //     &:nth-child(2){
-                //         margin-left: 8px;
-                //     }
-                // }
+                
             }
         }
     }
@@ -111,16 +80,19 @@ header{
 
 .content_wrapper{
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     @extend .dflex;
     justify-content: space-between;
     align-items: center;
     background-color: $light_green;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    border-radius: 16px;
-    padding: 3%;
+    
     .left_content_wrapper{
         width: 48%;
+      
+        h4{
+            color: $dark_green;
+            margin: 50px 30px;
+        }
         h2{
             font-size: 3.0vw;
             font-weight: 600;
@@ -134,7 +106,7 @@ header{
             }
         }
         p{
-            font-size: 1.5vw;
+            font-size: 1.2vw;
             color: #333;
             margin: 10px 0 30px 0;
         }
@@ -142,57 +114,27 @@ header{
             @extend .dflex;
             width: 100%;
             justify-content: space-between;
-            // margin-left: 20px;
             .btn{
                 @extend .dflex;
-                width: 48%;
+                width: 28%;
                 height: 56px;
-                font-size: 20px;
+                font-size: 18px;
                 border-radius: 8px;
                 font-weight: 600;
                 &.btn_primary{
-                    background-color: $black;
+                    background-color: $dark_green;
                     color: $white;
-                    // width: fit-content;
-                    svg{
-                        margin-left: 8px;    
-                    }
+                    
 
-                }
-                &.btn_secondary{
-                    background-color: $white;
-                    color: $black;
-                    border: 1px solid $black;
                 }
             }
         }
-        .review_container{
-            margin-top: 50px;
-            p.total_review{
-                font-weight: 600;
-                font-size: 20px;
-                color: $black;
-                margin: 0;
-            }
-            p.more_review{
-                color: #333;
-                font-weight: 400;
-                font-size: 16px;
-                // color: $black;
-                margin: 20px 0 0;
-            }
-            span{
-                display: inline-flex;
-                @extend .dflex;
-                width: 30px;
-                height: 30px;
-                background-color: $dark_green;
-                border-radius: 8px;
-                margin-top: 10px;
-                +span{
-                    margin-left: 8px;
-                }
-            }
+        .bg_decor{
+            position: absolute;
+            width: 766.31px;
+            height: 872.58px;
+            left: 1008px;
+            top: -102px;
         }
     }
     .right_content_wrapper{
@@ -200,16 +142,17 @@ header{
         @extend .dflex;
         justify-content: flex-end;
         img{
-            display: block;
+            // display: block;
             width: 100%;
         }
     }
+    
 }
-
+//service container
 .service_container{
     display: block;
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     .title_wrapper{
         overflow: hidden;
         .service_title{
@@ -221,6 +164,13 @@ header{
             font-size: 1.01vw;
             font-weight: 600;
             overflow: hidden;
+        }
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 15px;
+            color: #5E6282;
+            padding-top: 20px;
         }
     }
     h2{
@@ -243,13 +193,16 @@ header{
     .card{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 10px;
+        // justify-content: space-between;
+        align-items: center;
         width: calc(96% / 3);
-        border: 1px solid  green;
+        border: 1px solid  #AAAAFF;
         border-radius: 8px;
-        background-color: $white;
-        padding: 2.8vw 3.8vw;
-        height: 16.67vw;
+        background-color: #AAAAFF;
+        background-image: url('../images/service1.png');
+        padding: 5.8vw 3.8vw;
+        height: 300px;
         position: relative;
         top: 0;
         transition: all .3s ease-in-out;
@@ -258,53 +211,207 @@ header{
             cursor: pointer;
             top: -5px;
         }
-        &.dark{
-            background-color: $black;
-            color: $white;
-            // .line{
-            //     position: absolute;
-            //     top: 0;
-            //     right: 3.8vw;
-            //     width: 4.5vw;
-            // }
-            h2{
-                color: $white;
-                text-align: left;
-            }
-            a{
-                display: flex;
-                justify-content: space-between;
-            }
-        }
         .service_icon{
-            width: 3.02vw;
-            height: 3.02vw;
+            width: 3.5vw;
+            height: 3.5vw;
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            background-color: $dark_green;
-            color: $white;
             border-radius: 8px;
         }
         h3{
-            font-size: 1.15vw;
+            font-size: 1.75vw;
             font-weight: 600;
-            color: $black;
+            color: $white;
             text-transform: capitalize;
         }
-        a{
-            display: inline-flex;
-            justify-content: flex-start;
-            font-size:  .94vw;
-            text-decoration: none;
+        p{
+            font-size: 15px;
+            color: $white;
+        }
+        
+    }
+}
+
+//about us
+.about_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left_content{
+        width: 40%;
+        h3{
             color: $dark_green;
-            align-items: center;
-            span{
-                margin-right: 8px;
-            }
-            svg{
-                margin-top: 3px;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        .btn_group{
+            padding-top: 20px;
+            @extend .dflex;
+            width: 100%;
+            justify-content: space-between;
+            .btn{
+                @extend .dflex;
+                width: 28%;
+                height: 46px;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 600;
+                &.btn_primary{
+                    background-color: $dark_green;
+                    color: $white;
+                    
+
+                }
             }
         }
     }
+    .right_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
+//history container
+.history_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img{
+            width: 100%;
+        }
+    }
+    .right_content{
+        width: 40%;
+        h3{
+            color: $dark_green;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        .btn_group{
+            padding-top: 20px;
+            @extend .dflex;
+            width: 100%;
+            justify-content: space-between;
+            .btn{
+                @extend .dflex;
+                width: 28%;
+                height: 46px;
+                font-size: 16px;
+                border-radius: 8px;
+                font-weight: 500;
+                &.btn_primary{
+                    background-color: $white;
+                    color: $black;
+                    border: 1px solid $dark_green;
+                    
+
+                }
+            }
+        }
+    }
+    
+}
+
+//volunteer container
+.volunteer_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left_content{
+        width: 50%;
+        h3{
+            color: $dark_green;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        img{
+            width: 100%;
+        }
+        
+    }
+    .right_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+        flex-direction: column;
+        
+
+        .review_container{
+            @extend .dflex;
+            margin: 20px;
+            flex-direction: row;
+            
+            p.review_item{
+                font-weight: 600;
+                font-size: 20px;
+                color: $black;
+                margin: 0;
+            }
+            p{
+                color: #333;
+                font-weight: 400;
+                font-size: 16px;
+                // color: $black;
+                margin: 20px 0 0;
+            }
+            span{
+                @extend .dflex;
+                width: 30px;
+                height: 30px;
+                color: $dark_green;
+                font-weight: 800;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+        
+    }
+
 }

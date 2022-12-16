@@ -5,51 +5,43 @@ const Card = () => {
     return (
         <div className='service_container'>
             <div className='title_wrapper'>
-                <span className='service_title'>Services</span>
                 <h2>View what we do</h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur. Vitae dignissim montes semper 
+                <br/>
+                at posuere odio tellus ut. Eu pellentesque ac semper sed.
+                </p>
             </div>
             <div className='service_card'>
                 <div className='card'>
-                    <span className='service_icon' style={{backgroundColor:'#ddfbf9'}}>
-                        <IconContext.Provider value={{color:'#14da8f', size:'22px'}}>
+                    <span className='service_icon'>
+                        <IconContext.Provider value={{color:'white', size:'25px'}}>
                             <FaCalendar />
                         </IconContext.Provider>
                     </span>
-                    <h3>helping the needy <br/>join us</h3>
-                    <a href='#'>
-                        <span>learn more</span>
-                        <IconContext.Provider value={{color:'#14da8f', size:'18px' }}>
-                            <FaChevronCircleRight/>
+                    <h3>Education </h3>
+                    <p>Lorem starts here</p>
+                    
+                </div>
+                <div className='card' style={{backgroundColor:'#f54f0d'}}>
+                    <span className='service_icon'>
+                        <IconContext.Provider value={{color:'white', size:'25px'}}>
+                            <FaCalendar />
                         </IconContext.Provider>
-                    </a>
+                    </span>
+                    <h3>Education </h3>
+                    <p>Lorem starts here</p>
+                   
                 </div>
                 <div className='card'>
-                    <span className='service_icon' style={{backgroundColor:'#ddfbf9'}}>
-                        <IconContext.Provider value={{color:'#14da8f', size:'22px'}}>
+                    <span className='service_icon'>
+                        <IconContext.Provider value={{color:'white', size:'22px'}}>
                             <FaCalendar />
                         </IconContext.Provider>
                     </span>
-                    <h3>helping the needy <br/>join us</h3>
-                    <a href='#'>
-                        <span>learn more</span>
-                        <IconContext.Provider value={{color:'#14da8f', size:'18px' }}>
-                            <FaChevronCircleRight/>
-                        </IconContext.Provider>
-                    </a>
-                </div>
-                <div className='card dark'>
-                    <span className='service_icon' style={{backgroundColor:'#ddfbf9'}}>
-                        <IconContext.Provider value={{color:'#14da8f', size:'22px'}}>
-                            <FaCalendar />
-                        </IconContext.Provider>
-                    </span>
-                    <h3>helping the needy <br/>join us</h3>
-                    <a href='#'>
-                        <span>learn more</span>
-                        <IconContext.Provider value={{color:'#14da8f', size:'18px' }}>
-                            <FaChevronCircleRight/>
-                        </IconContext.Provider>
-                    </a>
+                    <h3>Education </h3>
+                    <p>Lorem starts here</p>
+                    
                 </div>
             </div>
         </div>
