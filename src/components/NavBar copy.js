@@ -1,6 +1,6 @@
 import React, {useState } from "react";
 import '../styles/NavBar.scss'
-import { AiFillHeart } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
 
 export default function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Navbar () {
           <a href="/impact"> Impact Stories </a>
           <a href="/#"> Contact Us </a>
           <a href="/donate" className="donate">
-            Donate{" "}<AiFillHeart style={{fontSize: "22px"}}/>
+            Donate{" "}<AiOutlineHeart style={{fontSize: "22px"}}/>
           </a>
         </div>
         <div

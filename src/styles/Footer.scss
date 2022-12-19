@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.FooterSection {
+  padding-top: 1em;
+
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  width: 100%;
+
+}
+
+.footer-section {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  height: 90%;
+}
+
+.footer-col {
+  margin-left: 5%;
+  width: 20%;
+  padding: 0 10px;
+}
+
+.footer-col h4 {
+  font-size: 17px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 400;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  background-color: #f54f0d;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 200;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  margin-left: -2em;
+}
+
+.footer-col ul li a:hover {
+  color: #f54f0d;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #fff;
+  font-size: 20px;
+}
+
+.SubLandingPageFooter {
+  text-align: center;
+  color: #bbb;
+}
+
+.SubLandingPageFooter .textOne {
+  font-size: 0.9em;
+}
+
+.SubLandingPageFooter .textTwo {
+  font-size: 0.75em;
+}
+
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 50px) and (max-width: 400px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* Responsiveness */
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .FooterSection {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+}

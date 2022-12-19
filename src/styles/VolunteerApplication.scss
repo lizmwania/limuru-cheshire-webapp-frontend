@@ -1,0 +1,142 @@
+.VolunteerBannerContainer {
+    position: relative;
+    text-align: center;
+}
+
+.VolunteerBanner {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.VolunteerCenteredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    p {
+        font-size: 14px;
+        color: #ddd;
+    }
+}
+
+.VolunteerApplication {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Testimonial {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.VolunteerApplicationTitle {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Testimonial p {
+    font-weight: 100;
+    width: 120%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.ApplicationForm {
+    width: 60%;
+    margin: auto;
+}
+.ApplicationFormtitle{
+    text-align: center;
+     width: 70%; 
+     margin: auto;
+     font-size: 16px;
+     font-weight: 100;
+}
+.required {
+    font-size: 15px;
+    font-weight: 100
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+.nonrequiredlabel {
+    font-size: 15px;
+    font-weight: 100
+}
+
+.btn-submit {
+    padding: 8px 16px;
+    background-color: #f54f0d;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    color: #f54f0d;
+    border: 1px solid #f54f0d;
+    background-color: #fff;
+
+}
+
+// Page Responsiveness
+@media screen and (min-width: 120px) and (max-width: 600px) {
+
+    .VolunteerCenteredText {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        h1 {
+            font-size: 30px;
+            margin-top: -35%;
+            width: 400px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #ddd;
+        }
+    }
+
+    .ApplicationForm {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Testimonial {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    .ApplicationFormtitle{
+        text-align: center;
+         width: 80%; 
+         margin: auto;
+         font-size: 13px;
+         font-weight: 100;
+    }
+
+
+}

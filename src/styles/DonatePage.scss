@@ -1,0 +1,104 @@
+.donateSection{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 6rem;
+}
+.DonationBannerContainer {
+    position: relative;
+    text-align: center;
+}
+
+.DonationBanner {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.DonationCenteredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    p {
+        font-size: 14px;
+        color: #ddd;
+    }
+}
+
+
+.donationWays{
+    padding-left: 10%;
+    padding-top: 2%;
+    font-size: 20px;
+    font-weight: 100;
+}
+.faq{
+    width: 10%;
+    padding-left: 10%;
+}
+.donationPageImage{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.donationDescription{
+    font-size:14px;
+    font-weight:100
+}
+.donationTitle{
+ color: #037fff;    
+}
+
+// Responsiveness
+@media screen and (min-width: 80px) and (max-width: 449px) {
+    .donateSection{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 499px) {
+    .donateSection{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .donateSection{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+@media screen and (min-width: 120px) and (max-width: 600px) {
+
+    .VolunteerCenteredText {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        h1 {
+            font-size: 30px;
+            margin-top: -35%;
+            width: 400px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #ddd;
+        }
+    }
+}

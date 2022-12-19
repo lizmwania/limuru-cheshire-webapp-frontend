@@ -1,0 +1,166 @@
+.Navbar {
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 99;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 1px solid  hsl(240, 100%, 99%);
+    
+}
+
+.Navbar>.nav-logo {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 30px;
+    color: #f54f0d;
+    text-decoration: none;
+}
+
+.Navbar>.nav-items>a {
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.Navbar>.nav-items>a:hover {
+    opacity: 1;
+}
+
+.Navbar>.nav-items>a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #f54f0d;
+    transition: all 0.45s;
+}
+
+.Navbar>.nav-items>a:hover::before {
+    width: 100%;
+}
+
+.Navbar>.nav-toggle {
+    display: none;
+}
+
+.btn-letsgetstarted {
+    padding-left: 1%;
+    background-color: #f54f0d;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 1%;
+    opacity: 99;
+    font-size: 14px;
+}
+
+.donate {
+    border: 1px solid #fff;
+    background-color: #f54f0d;
+    color: #fff!important;
+    height: 45px !important;
+    text-decoration: none !important;
+    border-radius: 4px;
+    border-bottom: 0px solid #fff;
+    padding: 12px 20px;
+}
+
+// Page responsiveness
+@media (max-width: 850px) {
+    /* .nav-items{
+      padding-right: 20%;
+    } */
+  }
+  
+  @media (max-width: 1200px) {
+    .Navbar>.nav-items {
+      position: absolute;
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      height: 100%;
+      transform: translateX(-100%);
+      transition: all .45s;
+      
+    }
+  
+    /* .nav-items{
+      padding-right: 20%;
+    } */
+  
+    .Navbar>.nav-items>a::before {
+      background: transparent;
+    }
+  
+    .Navbar>.nav-items.open {
+      transform: translateX(0);
+    }
+  
+    .Navbar>.nav-toggle {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .nav-toggle>.bar {
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background: #000;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle>.bar::before,
+    .nav-toggle>.bar::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background: #000;
+      border-radius: 2px;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle>.bar::before {
+      width: 25px;
+      transform: translateY(-8px);
+      right: 0;
+    }
+  
+    .nav-toggle>.bar::after {
+      width: 32px;
+      transform: translateY(8px);
+    }
+  
+    .nav-toggle.open>.bar {
+      transform: translateX(-40px);
+      background: transparent;
+    }
+  
+    .nav-toggle.open>.bar::before {
+      width: 32px;
+      transform: rotate(45deg) translate(26px, -26px);
+    }
+  
+    .nav-toggle.open>.bar::after {
+      transform: rotate(-45deg) translate(26px, 26px);
+    }
+  }
