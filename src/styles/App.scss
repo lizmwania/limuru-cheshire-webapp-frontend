@@ -381,7 +381,12 @@ header{
         @extend .dflex;
         justify-content: flex-end;
         flex-direction: column;
-        
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
 
         .review_container{
             @extend .dflex;
@@ -392,14 +397,13 @@ header{
                 font-weight: 600;
                 font-size: 20px;
                 color: $black;
-                margin: 0;
+                
             }
             p{
-                color: #333;
-                font-weight: 400;
-                font-size: 16px;
-                // color: $black;
-                margin: 20px 0 0;
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 300;
             }
             span{
                 @extend .dflex;
@@ -411,7 +415,142 @@ header{
                 margin-top: 10px;
             }
         }
+        .btn_group{
+            padding-top: 20px;
+            @extend .dflex;
+            width: 100%;
+            justify-content: space-between;
+            .btn{
+                @extend .dflex;
+                width: 28%;
+                height: 46px;
+                font-size: 16px;
+                border-radius: 8px;
+                font-weight: 500;
+                &.btn_primary{
+                    background-color: $dark_green;
+                    color: $black;
+                    border: 1px solid $dark_green;
+                    
+
+                }
+            }
+        }
         
     }
 
+}
+.decor_content{
+    @extend .dflex;
+    margin-top: 50px;
+}
+
+//change world component
+.changeworld_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-image: url('../images/bg1.png');
+    .left_content{
+        width: 40%;
+        padding: 20px 10px 20px 30px;
+        h3{
+            color: $dark_green;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        .btn_group{
+            padding-top: 20px;
+            @extend .dflex;
+            width: 100%;
+            justify-content: space-between;
+            .btn{
+                @extend .dflex;
+                width: 28%;
+                height: 46px;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 600;
+                &.btn_primary{
+                    background-color: $dark_green;
+                    color: $white;
+                    
+
+                }
+            }
+        }
+    }
+    .right_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+        padding: 20px 30px 20px 0;
+
+        img{
+            width: 100%;
+            
+        }
+    }
+
+}
+
+//contact container
+.contact_container{
+    display: block;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    background-image: url('../images/bg2.png');
+    .title_wrapper{
+        // overflow: hidden;
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 15px;
+            color: #5E6282;
+            padding-top: 20px;
+        }
+        h2{
+            font-size: 1.7vw;
+            font-weight: 500;
+            color: $dark_green;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 20px;
+            line-height: 1.5;
+            overflow: hidden;
+        }
+    }
+    .btn_group{
+        padding-top: 20px;
+        @extend .dflex;
+        width: 100%;
+        .btn{
+            @extend .dflex;
+            width: 15%;
+            height: 46px;
+            font-size: 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            &.btn_primary{
+                background-color: $dark_green;
+                color: $white;
+                
+
+            }
+        }
+    }
 }
