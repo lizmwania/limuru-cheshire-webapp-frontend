@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import "../styles/DonatePage.scss";
 import save from "../images/save2.JPG";
 import mpesa from "../images/mpesa.png";

@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import ReactTooltip from "react-tooltip";
 import { HiInformationCircle } from "react-icons/hi";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 export default function VolunteerApplication() {
   return (
     <>

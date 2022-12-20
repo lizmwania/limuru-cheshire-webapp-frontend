@@ -1,6 +1,6 @@
 import React from "react";
 import ImpactStories from "../components/ImpactStories";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import ImpactBanner from "../images/ImpactStory.jpg";
 import "../styles/ImpactPage.scss";
 
