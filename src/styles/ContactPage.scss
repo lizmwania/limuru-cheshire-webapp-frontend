@@ -1,0 +1,103 @@
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactContainer {
+    position: relative;
+    text-align: center;
+}
+
+.MapContainer {
+    padding-top: 30px;
+    position: relative;
+    object-position: 50% 50%;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.ContactTitle {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ContactForm {
+    width: 60%;
+    margin: auto;
+}
+.ContactFormtitle{
+    text-align: center;
+     width: 70%; 
+     margin: auto;
+     font-size: 16px;
+     font-weight: 100;
+}
+.required {
+    font-size: 15px;
+    font-weight: 100;
+    float: left;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+.btn-submit {
+    padding: 8px 16px;
+    background-color: #f54f0d;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    color: #f54f0d;
+    border: 1px solid #f54f0d;
+    background-color: #fff;
+
+}
+
+// Page Responsiveness
+@media screen and (min-width: 120px) and (max-width: 600px) {
+
+    .VolunteerCenteredText {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        h1 {
+            font-size: 30px;
+            margin-top: -35%;
+            width: 400px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #ddd;
+        }
+    }
+
+    .ContactForm {
+        width: 80%;
+        margin: auto;
+    }
+
+    .ContactFormtitle{
+        text-align: center;
+         width: 80%; 
+         margin: auto;
+         font-size: 13px;
+         font-weight: 100;
+    }
+
+
+}

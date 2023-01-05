@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage";
 import ImpactPage from "./Pages/ImpactPage";
 import Footer from "./components/Footer";
 import DonatePage from "./Pages/DonatePage";
+import ContactPage from "./Pages/ContactPage";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/volunteer" element={<VolunteerApplication />} />
           <Route path="/donate" element={<DonatePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
       <Footer/>

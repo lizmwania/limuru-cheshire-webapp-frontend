@@ -16,7 +16,7 @@ export default function Navbar () {
           <a href="/#about">About</a>
           <a href="/volunteer"> Work with us </a>
           <a href="/impact"> Impact Stories </a>
-          <a href="/#"> Contact Us </a>
+          <a href="/contact"> Contact Us </a>
           <a href="/donate" className="donate">
             Donate{" "}<AiFillHeart style={{fontSize: "22px"}}/>
           </a>
