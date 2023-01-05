@@ -43,12 +43,8 @@ header{
         width: 600px;
         height: 56px;
         justify-content: space-between;
-        // flex-direction: row;
         .link{
             cursor: pointer;
-            // display: flex;
-            // gap: 10px;
-            // align-items: center;
         }
         span{
             display: inline-flex;
@@ -57,10 +53,6 @@ header{
             position: relative;
             height: 100%;
           
-           
-            
-                
-            
             &.donate_menu{
                 @extend .dflex;
                 width: fit-content;
@@ -112,11 +104,11 @@ header{
         }
         .btn_group{
             @extend .dflex;
-            width: 100%;
+            width: fit-content;
             justify-content: space-between;
             .btn{
                 @extend .dflex;
-                width: 28%;
+                width: fit-content;
                 height: 56px;
                 font-size: 18px;
                 border-radius: 8px;
@@ -260,14 +252,13 @@ header{
             font-weight: 300;
         }
         .btn_group{
-            padding-top: 20px;
             @extend .dflex;
-            width: 100%;
+            width: fit-content;
             justify-content: space-between;
             .btn{
                 @extend .dflex;
-                width: 28%;
-                height: 46px;
+                width: fit-content;
+                height: 56px;
                 font-size: 18px;
                 border-radius: 8px;
                 font-weight: 600;
@@ -422,7 +413,7 @@ header{
             justify-content: space-between;
             .btn{
                 @extend .dflex;
-                width: 28%;
+                width: fit-content;
                 height: 46px;
                 font-size: 16px;
                 border-radius: 8px;
@@ -476,11 +467,11 @@ header{
         .btn_group{
             padding-top: 20px;
             @extend .dflex;
-            width: 100%;
+            width: fit-content;
             justify-content: space-between;
             .btn{
                 @extend .dflex;
-                width: 28%;
+                width: fit-content;
                 height: 46px;
                 font-size: 18px;
                 border-radius: 8px;
@@ -540,7 +531,7 @@ header{
         width: 100%;
         .btn{
             @extend .dflex;
-            width: 15%;
+            width: fit-content;
             height: 46px;
             font-size: 18px;
             border-radius: 8px;
