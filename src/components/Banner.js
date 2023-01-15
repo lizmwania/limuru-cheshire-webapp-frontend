@@ -21,7 +21,7 @@ const fadeInUp = {
   initial:{
     y:-60,
     opacity:0,
-    transition:{duration:0.6, ease:easing}
+    transition:{duration:1, ease:easing}
   },
   animate:{
     y:0,
@@ -59,7 +59,7 @@ const firstName = {
     transition:{
       delayChildren:0.4,
       staggerChildren:0.04,
-      staggerDirection:-1
+      staggerDirection:1
     }
   }
 }
@@ -84,7 +84,7 @@ const letter ={
   },
   animate:{
     y:0,
-    transition:{duration:1, ...transition}
+    transition:{duration:0.8, ...transition}
   }
 }
 
@@ -118,31 +118,46 @@ const Banner = () => {
                             <motion.span variants={letter}>e</motion.span>
                             <motion.span variants={letter}>m</motion.span>
                             <motion.span variants={letter} className='second'>L</motion.span>
+                            <motion.span variants={letter}>i</motion.span>
+                            <motion.span variants={letter}>p</motion.span>
+                            <motion.span variants={letter}>s</motion.span>
+                            <motion.span variants={letter}>u</motion.span>
+                            <motion.span variants={letter}>m</motion.span>
+                            
                         </motion.span>
-                        <span>
+                        {/* <span>
                         Lorem ipsum dolor 
-                        </span>
+                        </span> */}
                     </motion.h4>
                     <motion.h2>
-                        <motion.span> We reach <span className='second' variants={letter}>marginalized</span></motion.span>
-                        <span> Vulnarable, <span className='second'>disabled</span></span>
+
+                        <motion.span variants={firstName} initial="initial" animate="animate" classname='second'>
+                            <motion.span variants={letter} className='first'>We</motion.span>
+                            <motion.span variants={letter} className='second'>Reach</motion.span>
+                            <motion.span variants={letter} className='second'>Marginalized</motion.span>
+                            <motion.span variants={letter} className='first'>Vulnarable &</motion.span>
+                            {/* <motion.span variants={letter} className='second'>and</motion.span> */}
+                            <motion.span variants={letter} className='second'>Disabled</motion.span>
+                        </motion.span>
+                        {/* <motion.span> We reach <span className='second' variants={letter}>marginalized</span></motion.span>
+                        <span> Vulnarable, <span className='second'>disabled</span></span> */}
                         
                     </motion.h2>
-                    <p>
+
+                    <motion.p variants={fadeInUp} >
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                    </p>
-                    <div className='btn_group'>
-                        <div className='btn btn_primary'>
+                    </motion.p>
+                    <motion.div className='btn_group' variants={stagger} >
+                        <motion.div className='btn btn_primary' variants={btnGroup} whileHover={{scale:1.05}} whileTap={{scale:0.95}} >  
                             Learn More
-                        </div>
-                    </div>  
+                        </motion.div>
+                    </motion.div>  
                 </div>
                 
-                <div className='right_content_wrapper'>
-                    
-                    <img src={img} alt='bg' />
-                </div>
+                <motion.div className='right_content_wrapper'>
+                    <motion.img src={img} alt='bg' initial={{x:200, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5, delay:0.8}} />
+                </motion.div>
 
                 
             </motion.div>

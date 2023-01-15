@@ -1,10 +1,34 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaHeart } from 'react-icons/fa';
 import img from '../images/change.png';
+
+let easing = [0.6, -0.05, 0.01, 0.99];
+
+const container = {
+    show: {
+        transition:{
+            staggerChildren:0.5
+        }
+    }
+};
+
+const item = {
+    hidden: {opacity:0,y:200},
+    show: {
+        opacity:1,
+        y:0,
+        transition:{
+            ease:'easeOut',
+            duration:1
+        }
+    }
+}
+
 const ChangeWorld = () => {
     return (
-        <div className='changeworld_container'>
-            <div className='left_content'>
+        <motion.div className='changeworld_container' variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
+            <motion.div className='left_content' variants={item}>
                 <h3>We can Change the World</h3>
                 <h1>Our Mission</h1>
                 <p>
@@ -17,12 +41,12 @@ const ChangeWorld = () => {
                         Donate
                     </div>
                 </div>
-            </div>
-            <div className='right_content'>
+            </motion.div>
+            <motion.div className='right_content' variants={item}>
                 <img src={img}  alt='changeworld' />
-            </div>
+            </motion.div>
             
-        </div>
+        </motion.div>
     );
 }
 

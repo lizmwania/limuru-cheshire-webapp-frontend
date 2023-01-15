@@ -84,6 +84,12 @@ header{
         h4{
             color: $dark_green;
             margin: 50px 30px;
+            span{
+                display: inline-block;
+                span.second{
+                    margin-left: 15px;
+                }
+            }
         }
         h2{
             font-size: 3.0vw;
@@ -92,6 +98,7 @@ header{
             overflow: hidden;
             span{
                 display: inline-block;
+                // margin-left: 10px;
                 span.second{
                     margin-left: 15px;
                 }
