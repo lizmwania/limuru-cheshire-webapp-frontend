@@ -115,7 +115,7 @@ export default function Navbar () {
         </motion.a>
         <motion.div className={`nav-items ${isOpen && "open"}`} variants={stagger}>
           <motion.a href="/">Home </motion.a>
-          <motion.a href="/#about">About</motion.a>
+          <motion.a href="/about">About</motion.a>
           <motion.a href="/volunteer"> Work with us </motion.a>
           <motion.a href="/impact"> Impact Stories </motion.a>
           <motion.a href="/contact"> Contact Us </motion.a>

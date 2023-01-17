@@ -1,0 +1,136 @@
+.AboutBannerContainer {
+    position: relative;
+    text-align: center;
+
+}
+
+.AboutBanner {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.AboutCenteredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f54f0d;
+
+    h1 {
+        font-size: 45px;
+
+    }
+
+    p {
+        font-size: 14px;
+        color: #f54f0d;
+    }
+}
+$light_green: #effffa;
+$dark_green: #f54f0d;
+$black: #000000;
+$white: #fff;
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+//Foundation content
+.about_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left_content{
+        width: 40%;
+        h3{
+            color: $dark_green;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        .btn_group{
+            @extend .dflex;
+            width: fit-content;
+            justify-content: space-between;
+            .btn{
+                @extend .dflex;
+                width: fit-content;
+                height: 56px;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 600;
+                &.btn_primary{
+                    background-color: $dark_green;
+                    color: $white;
+                    
+
+                }
+            }
+        }
+    }
+    .right_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+//Mission Container
+.history_container{
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .left_content{
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img{
+            width: 100%;
+        }
+    }
+    .right_content{
+        width: 40%;
+        h3{
+            color: $dark_green;
+            font-size: 17px;
+            
+        }
+        h1{
+            margin-top: 20px;
+            font-weight: 500;
+
+        }
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        
+    }
+    
+}
