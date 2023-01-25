@@ -118,6 +118,7 @@ export default function Navbar () {
           <motion.a href="/about">About</motion.a>
           <motion.a href="/volunteer"> Work with us </motion.a>
           <motion.a href="/impact"> Impact Stories </motion.a>
+          <motion.a href="/tour"> Tour the Village </motion.a>
           <motion.a href="/contact"> Contact Us </motion.a>
           <motion.a href="/donate" className="donate" variants={header}>
             Donate{" "}<AiFillHeart style={{fontSize: "22px"}}/>

@@ -45,7 +45,7 @@ export default function DonatePage() {
         <div className="card" style={{ width: "15rem" }}>
           <img className="donationPageImage" src={products} alt="Donate" />
           <div className="card-body">
-            <h5 className="donationTitle">Donate through Mpesa</h5>
+            <h5 className="donationTitle">Donate Equipments</h5>
             <p className="donationDescription">
               Donate training equipments and materials such as sewing and
               kniting machines, computers, laptops, etc.
