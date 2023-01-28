@@ -23,72 +23,92 @@
     }
 
     p {
-        font-size: 14px;
-        color: #f54f0d;
+        width: 956px;
+        height: 39px;
+        left: 306px;
+        top: 236px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 39px;
+        color: #FFFFFF;
     }
+
 }
+
 $light_green: #effffa;
 $dark_green: #f54f0d;
 $black: #000000;
 $white: #fff;
-.dflex{
+
+.dflex {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 //Foundation content
-.about_container{
+.about_container {
     width: 80%;
     margin: 80px auto 0 auto;
     @extend .dflex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    .left_content{
+
+    .left_content {
         width: 40%;
-        h3{
+
+        h3 {
             color: $dark_green;
             font-size: 17px;
-            
+
         }
-        h1{
+
+        h1 {
             margin-top: 20px;
             font-weight: 500;
 
         }
-        p{
+
+        p {
             margin-top: 20px;
             font-size: 15px;
             line-height: 24px;
             font-weight: 300;
         }
-        .btn_group{
+
+        .btn_group {
             @extend .dflex;
             width: fit-content;
             justify-content: space-between;
-            .btn{
+
+            .btn {
                 @extend .dflex;
                 width: fit-content;
                 height: 56px;
                 font-size: 18px;
                 border-radius: 8px;
                 font-weight: 600;
-                &.btn_primary{
+
+                &.btn_primary {
                     background-color: $dark_green;
                     color: $white;
-                    
+
 
                 }
             }
         }
     }
-    .right_content{
+
+    .right_content {
         width: 40%;
         @extend .dflex;
         justify-content: flex-end;
 
-        img{
+        img {
             width: 100%;
         }
     }
@@ -96,41 +116,290 @@ $white: #fff;
 }
 
 //Mission Container
-.history_container{
+.history_container {
     width: 80%;
     margin: 80px auto 0 auto;
     @extend .dflex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    .left_content{
+
+    .left_content {
         width: 40%;
         @extend .dflex;
         justify-content: flex-end;
 
-        img{
+        img {
             width: 100%;
         }
     }
-    .right_content{
+
+    .right_content {
         width: 40%;
-        h3{
+
+        h3 {
             color: $dark_green;
             font-size: 17px;
-            
+
         }
-        h1{
+
+        h1 {
             margin-top: 20px;
             font-weight: 500;
 
         }
-        p{
+
+        p {
             margin-top: 20px;
             font-size: 15px;
             line-height: 24px;
             font-weight: 300;
         }
-        
+
     }
-    
+
+}
+
+//About projects para
+.about-pro {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    // line-height: 36px;s
+    text-align: center;
+    color: #000000;
+    position: relative;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 17%;
+    margin-top: 2%;
+}
+
+//Dormitory content
+.dorm_container {
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left_content {
+        width: 40%;
+
+        h3 {
+            color: $dark_green;
+            font-size: 17px;
+
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-weight: 500;
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        img {
+            float: left;
+            position: absolute;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+
+        .btn_group {
+            @extend .dflex;
+            width: fit-content;
+            justify-content: space-between;
+
+            .btn {
+                @extend .dflex;
+                width: fit-content;
+                height: 56px;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 600;
+
+                &.btn_primary {
+                    background-color: $dark_green;
+                    color: $white;
+
+
+                }
+            }
+        }
+    }
+
+    .right_content {
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+// Classes content
+.classes_container {
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left_content {
+        width: 40%;
+
+        h3 {
+            color: $dark_green;
+            font-size: 17px;
+
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-weight: 500;
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+
+        }
+
+        img {
+            position: absolute;
+            float: left;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+    }
+
+    .right_content {
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-start;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+//Classroom with Learners content
+.learners_container {
+    width: 80%;
+    margin: 80px auto 0 auto;
+    @extend .dflex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left_content {
+        width: 40%;
+
+        h3 {
+            color: $dark_green;
+            font-size: 17px;
+
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-weight: 500;
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+
+        }
+
+        img {
+            float: left;
+            position: absolute;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+
+        .btn_group {
+            @extend .dflex;
+            width: fit-content;
+            justify-content: space-between;
+
+            .btn {
+                @extend .dflex;
+                width: fit-content;
+                height: 56px;
+                font-size: 18px;
+                border-radius: 8px;
+                font-weight: 600;
+
+                &.btn_primary {
+                    background-color: $dark_green;
+                    color: $white;
+
+
+                }
+            }
+        }
+    }
+
+    .right_content {
+        width: 40%;
+        @extend .dflex;
+        justify-content: flex-end;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.income_pro {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+
+// Income projects
+.rect1 {
+    height: auto;
+    width: 18.43px;
+    left: 147px;
+    background: #FD2155;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 0;
+}
+
+.img_project1 {
+    position: relative;
+    top: 0;
+    margin-left: 200px;
+    width: 500px;
 }
