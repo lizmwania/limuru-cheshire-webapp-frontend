@@ -1,0 +1,61 @@
+.IncomeGenerating {
+    width: 60%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.IncomeSection {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 2px;
+
+
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.IncomeSection:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.IncomeGeneratingTitle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.IncomeLeftSection {
+    padding: 20px;
+}
+
+.IncomeImages {
+    width: 40%
+}
+
+@media (max-width: 768px) {
+    .IncomeSection {
+        flex-direction: column;
+    }
+
+    .IncomeImages {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2%;
+    }
+
+    .IncomeSection {
+
+        border-radius: 2px;
+
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

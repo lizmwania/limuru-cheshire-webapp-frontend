@@ -10,7 +10,11 @@ import AboutLine from "../images/Line.png";
 import AboutClass from "../images/aboutus/classes.png";
 import AboutLearners from "../images/aboutus/learners.png";
 import AboutRectangle from "../images/aboutus/Rectangle.png";
-import AboutProjectOne from "../images/aboutus/project1.png";
+import Offices from "../images/Offices.jpg";
+import classes from "../images/aboutus/classes.png";
+import IncomeGenerating from "../components/IncomeGenerating";
+import { BsBook, BsCaretRightFill } from "react-icons/bs";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -73,130 +77,144 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <motion.div
-        className="about_container"
-        variants={container}
-        initial="hidden"
-        exit="exit"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        <motion.div className="left_content" variants={item}>
-          <motion.h3 variants={stagger}>About Us</motion.h3>
-          <h1>Our Foundation</h1>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis
-          </p>
-        </motion.div>
-        <motion.div className="right_content" variants={item}>
-          <img src={AboutFoundation} alt="aboutus" />
-        </motion.div>
-      </motion.div>
+      {/* Facilities */}
 
-      <motion.div
-        className="history_container"
-        variants={container}
-        initial="hidden"
-        exit="exit"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        <motion.div className="left_content" variants={item}>
-          <img src={AboutMission} alt="history" />
-        </motion.div>
-        <motion.div className="right_content" variants={item}>
-          <motion.h3 variants={stagger}>About Us</motion.h3>
-          <h1>Our Mission</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Quis pulvinar sodales quis
-            et. Orci sed at sed aliquam dui quis in. Diam non vitae morbi massa
-            rhoncus cursus semper vel. Neque dignissim sed nunc et lectus
-            consectetur morbi. Lorem ipsum dolor sit amet consectetur. Quis
-            pulvinar sodales quis et. Orci sed at sed aliquam dui quis in. Diam
-            non vitae morbi massa rhoncus cursus semper vel. Neque dignissim sed
-            nunc et lectus consectetur morbi. Lorem ipsum dolor sit amet
-            consectetur. Quis pulvinar sodales quis et. Orci sed at sed aliquam
-            dui quis in. Diam non vitae morbi massa rhoncus cursus semper vel.
-            Neque dignissim sed nunc et lectus consectetur morbi.
-          </p>
-        </motion.div>
-      </motion.div>
-      <p class="about-pro">
-        We have a number of projects currently underway that not only help to
-        generate income for us, but also equips the girls with relevant skills.
-      </p>
+      <div className="AboutContainer">
+        {/* first */}
+        <motion.div initial="initial" animate="animate">
+          <motion.div
+          
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3, ease: easing }}
+          >
+            <div class="facilities-wrapper">
+              <div class="facilities-content">
+                <h3 class="facilities-content-title">
+                  <strong>Classrooms</strong>
+                </h3>
 
-      {/* Dormitories Content */}
-      <motion.div
-        className="dorm_container"
-        variants={container}
-        initial="hidden"
-        exit="exit"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        <motion.div className="left_content" variants={item}>
-          <img src={AboutLine} alt="aboutus" />
-          <h1>Our Dormitories</h1>
-          <p>
-            We have a number of projects currently underway that not only help
-            to generate income for us.
-          </p>
-        </motion.div>
-        <motion.div className="right_content" variants={item}>
-          <img src={AboutDorm} alt="aboutus" />
-        </motion.div>
-      </motion.div>
+                <p class="facilities-content-text">
+                  We have modern classrooms that are equiped with state of the
+                  art .....
+                </p>
 
-      {/* Classrooms content */}
-      <motion.div
-        className="classes_container"
-        variants={container}
-        initial="hidden"
-        exit="exit"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        <motion.div className="right_content" variants={item}>
-          <img src={AboutClass} alt="classes" />
+                <ul class="facilities-list">
+                  <li class="facilities-list-item">
+                    <p>
+                      <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </li>
+                  <li class="facilities-list-item">
+                    <p>
+                      <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </li>
+                  <li class="facilities-list-item">
+                    <p>
+                      <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <figure class="facilities-banner">
+                <img src={classes} width="20%" alt="svg" />
+              </figure>
+            </div>
+          </motion.div>
         </motion.div>
-        <motion.div className="left_content" variants={item}>
-          <img src={AboutLine} alt="aboutus" />
-          <h1>Our Classrooms</h1>
-          <p>
-            We have a number of projects currently underway that not only help
-            to generate income for us.
-          </p>
-        </motion.div>
-      </motion.div>
+        <div class="facilities-wrapper">
+          <figure class="facilities-banner">
+            <img src={AboutDorm} alt="svg" />
+          </figure>
 
-      {/* Classes with Learners Content */}
-      <motion.div
-        className="learners_container"
-        variants={container}
-        initial="hidden"
-        exit="exit"
-        whileInView="show"
-        viewport={{ once: false }}
-      >
-        <motion.div className="left_content" variants={item}>
-          <img src={AboutLine} alt="aboutus" />
-          <h1>Classroom with learners</h1>
-          <p>
-            We have a number of projects currently underway that not only help
-            to generate income for us.
-          </p>
-        </motion.div>
-        <motion.div className="right_content" variants={item}>
-          <img src={AboutLearners} alt="aboutus" />
-        </motion.div>
-      </motion.div>
+          <div class="facilities-content">
+            <h3 class="facilities-content-title">
+              <strong>Dormitories </strong>
+            </h3>
 
-      <h3 class="income_pro">Income generating projects</h3>
-      <img class="rect1" src={AboutRectangle} alt="aboutus" />
-      <img class="img_project1" src={AboutProjectOne} alt="aboutus" />
+            <p class="facilities-content-text">
+              We have modern dormitories that are equiped with state of the art
+              .....
+            </p>
+
+            <ul class="facilities-list">
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* third */}
+        <div class="facilities-wrapper">
+          <figure class="facilities-banner">
+            <img src={Offices} width="20%" alt="svg" />
+          </figure>
+
+          <div class="facilities-content">
+            <h3 class="facilities-content-title">
+              <strong>Our Offices</strong>
+            </h3>
+
+            <p class="facilities-content-text">
+              We have modern offices that are equiped with state of the art that
+              .....
+            </p>
+
+            <ul class="facilities-list">
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+              <li class="facilities-list-item">
+                <p>
+                  <BsCaretRightFill style={{ color: "#f54f0d" }} />
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* end of facilities */}
+
+      <IncomeGenerating />
     </>
   );
 }

@@ -30,45 +30,45 @@ export default function Tour() {
       img: Image6,
     },
     {
-        img: Image1,
-      },
-      {
-        img: Image2,
-      },
-      {
-        img: Image3,
-      },
-      {
-        img: Image4,
-      },
-      {
-        img: Image5,
-      },
-      {
-        img: Image6,
-      },
-      {
-        img: Image1,
-      },
-      {
-        img: Image2,
-      },
-      {
-        img: Image3,
-      },
-      {
-        img: Image4,
-      },
-      {
-        img: Image5,
-      },
-      {
-        img: Image6,
-      }
+      img: Image1,
+    },
+    {
+      img: Image2,
+    },
+    {
+      img: Image3,
+    },
+    {
+      img: Image4,
+    },
+    {
+      img: Image5,
+    },
+    {
+      img: Image6,
+    },
+    {
+      img: Image1,
+    },
+    {
+      img: Image2,
+    },
+    {
+      img: Image3,
+    },
+    {
+      img: Image4,
+    },
+    {
+      img: Image5,
+    },
+    {
+      img: Image6,
+    },
   ];
   return (
     <div>
-    <Navbar/>
+      <Navbar />
       <div className="VolunteerBannerContainer">
         <img
           src={TourImage}
