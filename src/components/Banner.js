@@ -135,9 +135,9 @@ const Banner = () => {
                             <motion.span variants={letter} className='first'>We</motion.span>
                             <motion.span variants={letter} className='second'>Reach</motion.span>
                             <motion.span variants={letter} className='second'>Marginalized</motion.span>
-                            <motion.span variants={letter} className='first'>Vulnarable &</motion.span>
+                            <motion.span variants={letter} className='first'> Vulnarable &</motion.span>
                             {/* <motion.span variants={letter} className='second'>and</motion.span> */}
-                            <motion.span variants={letter} className='second'>Disabled</motion.span>
+                            <motion.span variants={letter} className='first'>Disabled</motion.span>
                         </motion.span>
                         {/* <motion.span> We reach <span className='second' variants={letter}>marginalized</span></motion.span>
                         <span> Vulnarable, <span className='second'>disabled</span></span> */}

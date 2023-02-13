@@ -73,29 +73,57 @@ header{
 .content_wrapper{
     width: 80%;
     margin: 20px auto 0 auto;
-    @extend .dflex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $light_green;
+    padding: 1rem;
+     background-color: $light_green;
+   
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            width: 90%;
+        }
+    
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            
+        }
+    
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            
+        }
     
     .left_content_wrapper{
-        width: 48%;
+        // width: 48%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        // justify-content: space-between;
+        
       
         h4{
             color: $dark_green;
-            margin: 50px 30px;
+            font-size: 1.2rem;
+            @media only screen and (min-width: 768px) {
+                    font-size: 1.5vw;
+                }
+            // margin: 50px 30px;
             span{
                 display: inline-block;
-                span.second{
-                    margin-left: 15px;
-                }
+              
             }
         }
         h2{
-            font-size: 3.0vw;
+            font-size: 1.5rem;
             font-weight: 600;
             line-height: 1.3;
             overflow: hidden;
+            @media only screen and (min-width: 768px) {
+                    font-size: 2vw;
+                }
             span{
                 display: inline-block;
                 // margin-left: 10px;
@@ -105,7 +133,7 @@ header{
             }
         }
         p{
-            font-size: 1.2vw;
+            font-size: 1rem;
             color: #333;
             margin: 10px 0 30px 0;
         }
@@ -113,12 +141,14 @@ header{
             @extend .dflex;
             width: fit-content;
             justify-content: space-between;
+            
             .btn{
-                @extend .dflex;
-                width: fit-content;
-                height: 56px;
-                font-size: 18px;
-                border-radius: 8px;
+                
+                // @extend .dflex;
+                // width: fit-content;
+                // height: 56px;
+                // font-size: 18px;
+                border-radius: 4px;
                 font-weight: 600;
                 &.btn_primary{
                     background-color: $dark_green;
@@ -137,12 +167,13 @@ header{
         }
     }
     .right_content_wrapper{
-        width: 48%;
-        @extend .dflex;
-        justify-content: flex-end;
+        // width: 48%;
+        // @extend .dflex;
+        // justify-content: flex-end;
         img{
             // display: block;
             width: 100%;
+            height: auto;
         }
     }
     
