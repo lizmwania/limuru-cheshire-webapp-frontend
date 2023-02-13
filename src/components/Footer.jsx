@@ -128,7 +128,8 @@ export default function Footer() {
             <hr />
             <p className="textOne">| TOGETHER | WE | CAN | CHANGE | LIVES |</p>
             <p className="textTwo">
-              © 2022 Copyright Limuru Chesire. All Rights Reserved.
+              © {new Date().getFullYear()} Copyright Limuru Chesire. All Rights
+              Reserved.
             </p>
           </div>
         </div>
