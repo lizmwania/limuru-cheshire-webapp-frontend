@@ -7,7 +7,8 @@
 .AboutBanner {
     width: 100%;
     position: relative;
-    height: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
 
 .AboutCenteredText {
@@ -18,20 +19,20 @@
     color: #f54f0d;
 
     h1 {
-        font-size: 45px;
+        // font-size: 45px;
 
     }
 
     p {
-        width: 956px;
-        height: 39px;
-        left: 306px;
-        top: 236px;
+        // width: 956px;
+        // height: 39px;
+        // left: 306px;
+        // top: 236px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 39px;
+        font-size: 1.2rem;
+        // line-height: 39px;
         color: #FFFFFF;
     }
 
