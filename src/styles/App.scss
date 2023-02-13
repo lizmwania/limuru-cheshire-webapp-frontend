@@ -342,22 +342,35 @@ header{
 //history container
 .history_container{
     width: 80%;
-    margin: 80px auto 0 auto;
-    @extend .dflex;
-    justify-content: space-between;
+    margin: 80px auto 20px auto;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;
+   gap: 1rem;
+
+    @media only screen and (min-width: 785px) {
+        flex-direction: row;
+        .right_content {
+            width: 80%
+        }
+    }
+    // @extend .dflex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin-bottom: 20px;
     .left_content{
-        width: 40%;
+        // width: 40%;
         @extend .dflex;
-        justify-content: flex-end;
+        justify-content: center;
 
         img{
-            width: 100%;
+            width: 80%;
+            height: auto;
         }
     }
     .right_content{
-        width: 40%;
+        // width: 40%;
         h3{
             color: $dark_green;
             font-size: 17px;
@@ -375,13 +388,15 @@ header{
             font-weight: 300;
         }
         .btn_group{
-            padding-top: 20px;
+            padding-top: 1rem;
             @extend .dflex;
             width: 100%;
             justify-content: space-between;
+            gap: 1rem;
             .btn{
                 @extend .dflex;
-                width: 28%;
+               
+                // width: fit-content;
                 height: 46px;
                 font-size: 16px;
                 border-radius: 8px;
@@ -403,12 +418,18 @@ header{
 .volunteer_container{
     width: 80%;
     margin: 80px auto 0 auto;
-    @extend .dflex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    // @extend .dflex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin-bottom: 20px;
+    @media only screen and (min-width: 768px) {
+            display: flex;
+            gap: 3rem;
+            justify-content: space-between;
+            align-items: start;
+        }
     .left_content{
-        width: 50%;
+        // width: 50%;
         h3{
             color: $dark_green;
             font-size: 17px;
@@ -425,7 +446,7 @@ header{
         
     }
     .right_content{
-        width: 40%;
+        // width: 40%;
         @extend .dflex;
         justify-content: flex-end;
         flex-direction: column;
@@ -463,27 +484,29 @@ header{
                 margin-top: 10px;
             }
         }
-        .btn_group{
-            padding-top: 20px;
-            @extend .dflex;
-            width: 100%;
-            justify-content: space-between;
-            .btn{
-                @extend .dflex;
-                width: fit-content;
-                height: 46px;
-                font-size: 16px;
-                border-radius: 8px;
-                font-weight: 500;
-                &.btn_primary{
-                    background-color: $dark_green;
-                    color: $black;
-                    border: 1px solid $dark_green;
-                    
-
-                }
-            }
-        }
+                   .btn_group {
+                       @extend .dflex;
+                       width: fit-content;
+                    //    justify-content: space-between;
+                    align-self: start;
+        
+                       .btn {
+        
+                           // @extend .dflex;
+                           // width: fit-content;
+                           // height: 56px;
+                           // font-size: 18px;
+                           border-radius: 4px;
+                           font-weight: 600;
+        
+                           &.btn_primary {
+                               background-color: $dark_green;
+                               color: $white;
+        
+        
+                           }
+                       }
+                   }
         
     }
 
