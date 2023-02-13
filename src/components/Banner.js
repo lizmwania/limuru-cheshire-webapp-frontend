@@ -34,21 +34,21 @@ const fadeInUp = {
   }
 };
 
-const header = {
-  initial: {
-    y:-60,
-    opacity: 0,
-    transition:{duration:0.05, ease:easing}
-  },
-  animate:{
-    y:0,
-    opacity:1,
-    animation:{
-      duration:0.6,
-      ease:easing
-    }
-  }
-};
+// const header = {
+//   initial: {
+//     y:-60,
+//     opacity: 0,
+//     transition:{duration:0.05, ease:easing}
+//   },
+//   animate:{
+//     y:0,
+//     opacity:1,
+//     animation:{
+//       duration:0.6,
+//       ease:easing
+//     }
+//   }
+// };
 
 const firstName = {
   initial: {
@@ -64,19 +64,19 @@ const firstName = {
   }
 }
 
-const lastName = {
-  initial: {
-    y:-20,
-  },
-  animate:{
-    y:0,
-    transition:{
-      delayChildren:0.4,
-      staggerChildren:0.04,
-      staggerDirection:-1
-    }
-  }
-}
+// const lastName = {
+//   initial: {
+//     y:-20,
+//   },
+//   animate:{
+//     y:0,
+//     transition:{
+//       delayChildren:0.4,
+//       staggerChildren:0.04,
+//       staggerDirection:-1
+//     }
+//   }
+// }
 
 const letter ={
   initial:{

@@ -7,10 +7,12 @@ export default function Pillars() {
   return (
     <div className="pillars">
       <div className="row">
-        <div className="col-md-6">
-       <BsFillPinFill style={{fontSize: "25px", color: "#f54f0d"}}/><span style={{fontSize: "18px", color: "#f54f0d"}}>Core Pillars </span>
-          <h1
-           className="PillarPageTitle">
+        <div className="">
+          <BsFillPinFill style={{ fontSize: "25px", color: "#f54f0d" }} />
+          <span style={{ fontSize: "1.2rem", color: "#f54f0d" }}>
+            Core Pillars{" "}
+          </span>
+          <h1 className="PillarPageTitle">
             We believe in the five core pillars that keep us going and guide us
             then it comes to making crucial day to day decisions.{" "}
           </h1>
@@ -71,8 +73,8 @@ export default function Pillars() {
             </div>
           </div>
         </div>
-        <div className="col-md-6">
-          <img src={pillarImg} alt="image here" className="PillarBanner" />
+        <div className="">
+          <img src={pillarImg} alt="our pillars" className="PillarBanner" />
         </div>
       </div>
     </div>

@@ -191,20 +191,20 @@ header{
             color: $dark_green;
             text-transform: uppercase;
             letter-spacing: 5px;
-            font-size: 1.01vw;
+            font-size: 1rem;
             font-weight: 600;
             overflow: hidden;
         }
         p{
             text-align: center;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 1rem;
             color: #5E6282;
             padding-top: 20px;
         }
     }
     h2{
-        font-size: 2.2vw;
+        font-size: 1.2rem;
         font-weight: 600;
         color: $dark_green;
         text-align: center;
@@ -215,24 +215,32 @@ header{
     }
 }
 .service_card{
-    @extend .dflex;
-    flex-wrap: wrap;
-    grid-gap: 1vw;
-    justify-content: flex-start;
-    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 1rem;
+    width: 80%;
+    margin: 3rem auto;
+    @media only screen and (min-width: 600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+   
     .card{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        // justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: calc(96% / 3);
+        width: 250px;
         border: 1px solid  #AAAAFF;
         border-radius: 8px;
         background-color: #AAAAFF;
         background-image: url('../images/service1.png');
         padding: 5.8vw 3.8vw;
-        height: 300px;
+        height:270px;
         position: relative;
         top: 0;
         transition: all .3s ease-in-out;
@@ -242,21 +250,21 @@ header{
             top: -5px;
         }
         .service_icon{
-            width: 3.5vw;
-            height: 3.5vw;
+            width: 3rem;
+            height: 3rem;
             display: inline-flex;
             justify-content: center;
             align-items: center;
             border-radius: 8px;
         }
         h3{
-            font-size: 1.75vw;
+            font-size: 1.2rem;
             font-weight: 600;
             color: $white;
             text-transform: capitalize;
         }
         p{
-            font-size: 15px;
+            font-size: 1rem;
             color: $white;
         }
         
@@ -267,12 +275,19 @@ header{
 .about_container{
     width: 80%;
     margin: 80px auto 0 auto;
-    @extend .dflex;
-    justify-content: space-between;
+    display: grid;
+      
+        justify-content: center;
+    @media only screen and (min-width: 785px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    
+    }
     .left_content{
-        width: 40%;
+        // width: 40%;
+        margin-bottom: 1rem;
         h3{
             color: $dark_green;
             font-size: 17px;
@@ -289,33 +304,37 @@ header{
             line-height: 24px;
             font-weight: 300;
         }
-        .btn_group{
-            @extend .dflex;
-            width: fit-content;
-            justify-content: space-between;
-            .btn{
-                @extend .dflex;
-                width: fit-content;
-                height: 56px;
-                font-size: 18px;
-                border-radius: 8px;
-                font-weight: 600;
-                &.btn_primary{
-                    background-color: $dark_green;
-                    color: $white;
-                    
-
+                .btn_group {
+                    @extend .dflex;
+                    width: fit-content;
+                    justify-content: space-between;
+        
+                    .btn {
+        
+                        // @extend .dflex;
+                        // width: fit-content;
+                        // height: 56px;
+                        // font-size: 18px;
+                        border-radius: 4px;
+                        font-weight: 600;
+        
+                        &.btn_primary {
+                            background-color: $dark_green;
+                            color: $white;
+        
+        
+                        }
+                    }
                 }
-            }
-        }
     }
     .right_content{
-        width: 40%;
+        // width: 40%;
         @extend .dflex;
         justify-content: flex-end;
 
         img{
             width: 100%;
+            height: auto;
         }
     }
 
