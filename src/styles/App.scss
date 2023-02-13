@@ -661,53 +661,65 @@ header {
 
 //contact container
 .contact_container {
-    display: block;
-    width: 80%;
+    // display: block;
+    width: 100%;
+    min-height: 40vh;
     margin: 50px auto 0 auto;
     background-image: url('../images/bg2.png');
+    display: grid;
+        align-items: center;
 
     .title_wrapper {
-
+        display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 1rem;
+            
         // overflow: hidden;
         p {
             text-align: center;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 1rem;
             color: #5E6282;
             padding-top: 20px;
+            @media only screen and (max-width: 600px) {
+                padding-top: 4rem;
+                }
         }
 
         h2 {
-            font-size: 1.7vw;
+            font-size: 1.5rem;
             font-weight: 500;
             color: $dark_green;
             text-align: center;
             text-transform: capitalize;
-            margin-top: 20px;
+            // margin-top: 20px;
             line-height: 1.5;
             overflow: hidden;
         }
     }
 
-    .btn_group {
-        padding-top: 20px;
-        @extend .dflex;
-        width: 100%;
-
-        .btn {
-            @extend .dflex;
-            width: fit-content;
-            height: 46px;
-            font-size: 18px;
-            border-radius: 8px;
-            font-weight: 600;
-
-            &.btn_primary {
-                background-color: $dark_green;
-                color: $white;
-
-
-            }
-        }
-    }
+          .btn_group {
+            //   @extend .dflex;
+            //   width: fit-content;
+            //   justify-content: center;
+    
+              .btn {
+    
+                  // @extend .dflex;
+                  // width: fit-content;
+                  // height: 56px;
+                  // font-size: 18px;
+                  border-radius: 4px;
+                  font-weight: 600;
+    
+                  &.btn_primary {
+                      background-color: $dark_green;
+                      color: $white;
+    
+    
+                  }
+              }
+          }
 }
