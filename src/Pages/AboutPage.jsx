@@ -3,66 +3,66 @@ import "../styles/AboutPage.scss";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import AboutBanner from "../images/aboutus/img3.png";
-import AboutFoundation from "../images/aboutus/img1.png";
-import AboutMission from "../images/aboutus/img2.png";
+// import AboutFoundation from "../images/aboutus/img1.png";
+// import AboutMission from "../images/aboutus/img2.png";
 import AboutDorm from "../images/aboutus/dorm.png";
-import AboutLine from "../images/Line.png";
-import AboutClass from "../images/aboutus/classes.png";
-import AboutLearners from "../images/aboutus/learners.png";
-import AboutRectangle from "../images/aboutus/Rectangle.png";
+// import AboutLine from "../images/Line.png";
+// import AboutClass from "../images/aboutus/classes.png";
+// import AboutLearners from "../images/aboutus/learners.png";
+// import AboutRectangle from "../images/aboutus/Rectangle.png";
 import Offices from "../images/Offices.jpg";
 import classes from "../images/aboutus/classes.png";
 import IncomeGenerating from "../components/IncomeGenerating";
-import { BsBook, BsCaretRightFill } from "react-icons/bs";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import {  BsCaretRightFill } from "react-icons/bs";
+// import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
-const container = {
-  show: {
-    transition: {
-      staggerChildren: 0.5,
-    },
-  },
-};
+// const container = {
+//   show: {
+//     transition: {
+//       staggerChildren: 0.5,
+//     },
+//   },
+// };
 
-const item = {
-  hidden: { opacity: 0, y: 200 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: "easeOut",
-      duration: 1,
-    },
-  },
-};
+// const item = {
+//   hidden: { opacity: 0, y: 200 },
+//   show: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       ease: "easeOut",
+//       duration: 1,
+//     },
+//   },
+// };
 
-const title = {
-  hidden: {
-    y: 60,
-    opacity: 0,
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      delay: 0.2,
-      duration: 0.6,
-      ease: easing,
-    },
-  },
-};
+// const title = {
+//   hidden: {
+//     y: 60,
+//     opacity: 0,
+//   },
+//   show: {
+//     y: 0,
+//     opacity: 1,
+//     transition: {
+//       delay: 0.2,
+//       duration: 0.6,
+//       ease: easing,
+//     },
+//   },
+// };
 
-const stagger = {
-  animate: {
-    transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.2,
-      staggerDirection: 1,
-    },
-  },
-};
+// const stagger = {
+//   animate: {
+//     transition: {
+//       delayChildren: 0.4,
+//       staggerChildren: 0.2,
+//       staggerDirection: 1,
+//     },
+//   },
+// };
 
 export default function AboutPage() {
   return (

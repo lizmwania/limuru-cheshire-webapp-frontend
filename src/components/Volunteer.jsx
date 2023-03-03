@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import img from "../images/volunteer.png";
 import decor from "../images/decore1.png";
 
-let easing = [0.6, -0.05, 0.01, 0.99];
+// let easing = [0.6, -0.05, 0.01, 0.99];
 
 const container = {
   show: {

@@ -28,7 +28,7 @@ export default function IncomeGenerating() {
             here', making it look like readable English
           </p>
         </div>
-        <img src={poultry} alt="Class Image" className="IncomeImages" />
+        <img src={poultry} alt="Class " className="IncomeImages" />
       </div>
       <br />
       <div
@@ -45,7 +45,7 @@ export default function IncomeGenerating() {
             here', making it look like readable English
           </p>
         </div>
-        <img src={horticulture} alt="Class Image" className="IncomeImages" />
+        <img src={horticulture} alt="Class " className="IncomeImages" />
       </div>
       <br />
       <div
@@ -62,7 +62,7 @@ export default function IncomeGenerating() {
             here', making it look like readable English
           </p>
         </div>
-        <img src={bakery} alt="Class Image" className="IncomeImages" />
+        <img src={bakery} alt="Class " className="IncomeImages" />
       </div>
       <br />
       <div
@@ -79,7 +79,7 @@ export default function IncomeGenerating() {
             here', making it look like readable English
           </p>
         </div>
-        <img src={beadwork} alt="Class Image" className="IncomeImages" />
+        <img src={beadwork} alt="Class " className="IncomeImages" />
       </div>
       <br/>  <br/>
     </div>

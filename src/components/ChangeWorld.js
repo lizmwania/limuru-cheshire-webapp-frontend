@@ -5,7 +5,7 @@ import img from "../images/change.png";
 import world from "../images/world.png"
 
 
-let easing = [0.6, -0.05, 0.01, 0.99];
+// let easing = [0.6, -0.05, 0.01, 0.99];
 
 const container = {
   show: {

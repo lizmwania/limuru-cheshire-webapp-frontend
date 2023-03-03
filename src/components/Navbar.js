@@ -1,12 +1,12 @@
 import React, {useState } from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import '../styles/NavBar.scss'
 import { AiFillHeart } from "react-icons/ai";
 import logo from "../images/logo.svg"
 
 let easing = [0.6,-0.05, 0.01, 0.99];
 
-const transition = {duration:1.4, ease:[0.6, 0.01,-0.05, 0.9]};
+// const transition = {duration:1.4, ease:[0.6, 0.01,-0.05, 0.9]};
 
 
 const stagger = {
@@ -19,22 +19,22 @@ const stagger = {
   }
 };
 
-const fadeInUp = {
-  initial:{
-    y:-60,
-    opacity:0,
-    transition:{duration:0.6, ease:easing}
-  },
-  animate:{
-    y:0,
-    opacity:1,
-    transition:{
-      duration:0.6,
-      delay:0.5,
-      ease:easing
-    }
-  }
-};
+// const fadeInUp = {
+//   initial:{
+//     y:-60,
+//     opacity:0,
+//     transition:{duration:0.6, ease:easing}
+//   },
+//   animate:{
+//     y:0,
+//     opacity:1,
+//     transition:{
+//       duration:0.6,
+//       delay:0.5,
+//       ease:easing
+//     }
+//   }
+// };
 
 const header = {
   initial: {
@@ -52,56 +52,56 @@ const header = {
   }
 };
 
-const firstname = {
-  initial: {
-    y:-20,
-  },
-  animate:{
-    y:0,
-    transition:{
-      delayChildren:0.4,
-      staggerChildren:0.04,
-      staggerDirection:-1
-    }
-  }
-}
+// const firstname = {
+//   initial: {
+//     y:-20,
+//   },
+//   animate:{
+//     y:0,
+//     transition:{
+//       delayChildren:0.4,
+//       staggerChildren:0.04,
+//       staggerDirection:-1
+//     }
+//   }
+// }
 
-const lastname = {
-  initial: {
-    y:-20,
-  },
-  animate:{
-    y:0,
-    transition:{
-      delayChildren:0.4,
-      staggerChildren:0.04,
-      staggerDirection:-1
-    }
-  }
-}
+// const lastname = {
+//   initial: {
+//     y:-20,
+//   },
+//   animate:{
+//     y:0,
+//     transition:{
+//       delayChildren:0.4,
+//       staggerChildren:0.04,
+//       staggerDirection:-1
+//     }
+//   }
+// }
 
-const letter ={
-  initial:{
-    y:400,
-  },
-  animate:{
-    y:0,
-    transition:{duration:1, ...transition}
-  }
-}
+// const letter ={
+//   initial:{
+//     y:400,
+//   },
+//   animate:{
+//     y:0,
+//     transition:{duration:1, ...transition}
+//   }
+// }
 
-const btnGroup ={
-  initial:{
-    y:-60,
-    opacity:0,
-    transition:{duration:0.6, ease:easing}
-  },
-  animate:{
-    y:0,
-    opacity:1,
-    animation:{duration:0.6, ease:easing}
-  }
-}
+// const btnGroup ={
+//   initial:{
+//     y:-60,
+//     opacity:0,
+//     transition:{duration:0.6, ease:easing}
+//   },
+//   animate:{
+//     y:0,
+//     opacity:1,
+//     animation:{duration:0.6, ease:easing}
+//   }
+// }
 
 
 

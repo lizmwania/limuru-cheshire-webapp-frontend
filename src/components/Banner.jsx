@@ -4,7 +4,7 @@ import img from "../images/img1.png";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+// const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const stagger = {
   animate: {
@@ -16,22 +16,22 @@ const stagger = {
   },
 };
 
-const fadeInUp = {
-  initial: {
-    y: -60,
-    opacity: 0,
-    transition: { duration: 1, ease: easing },
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      delay: 0.5,
-      ease: easing,
-    },
-  },
-};
+// const fadeInUp = {
+//   initial: {
+//     y: -60,
+//     opacity: 0,
+//     transition: { duration: 1, ease: easing },
+//   },
+//   animate: {
+//     y: 0,
+//     opacity: 1,
+//     transition: {
+//       duration: 0.6,
+//       delay: 0.5,
+//       ease: easing,
+//     },
+//   },
+// };
 
 // const header = {
 //   initial: {
@@ -49,19 +49,19 @@ const fadeInUp = {
 //   }
 // };
 
-const firstName = {
-  initial: {
-    y: -20,
-  },
-  animate: {
-    y: 0,
-    transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.04,
-      staggerDirection: 1,
-    },
-  },
-};
+// const firstName = {
+//   initial: {
+//     y: -20,
+//   },
+//   animate: {
+//     y: 0,
+//     transition: {
+//       delayChildren: 0.4,
+//       staggerChildren: 0.04,
+//       staggerDirection: 1,
+//     },
+//   },
+// };
 
 // const lastName = {
 //   initial: {
@@ -77,15 +77,15 @@ const firstName = {
 //   }
 // }
 
-const letter = {
-  initial: {
-    y: 400,
-  },
-  animate: {
-    y: 0,
-    transition: { duration: 0.8, ...transition },
-  },
-};
+// const letter = {
+//   initial: {
+//     y: 400,
+//   },
+//   animate: {
+//     y: 0,
+//     transition: { duration: 0.8, ...transition },
+//   },
+// };
 
 const btnGroup = {
   initial: {
