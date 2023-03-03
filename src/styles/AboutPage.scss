@@ -58,6 +58,25 @@
     text-align: justify;
     width: 80%;
     margin: 2rem auto;
+
+    .thematic_list{
+        margin: 1rem 0;
+        @media screen and (min-width:768px){
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+        }
+        li::before {
+                content: "";
+                display: inline-block;
+                width: 0.5em;
+                height: 0.5em;
+                margin-right: 0.5em;
+                border-radius: 50%;
+                background-color: red;
+        
+            }
+    }
     .paras {
         background-color: #f3f3fe;
         margin-top: 2rem;

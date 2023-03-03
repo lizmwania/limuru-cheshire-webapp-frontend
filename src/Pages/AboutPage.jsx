@@ -94,7 +94,7 @@ export default function AboutPage() {
         </p>
         <p>
           Our four key thematic areas are;
-          <ul className="list">
+          <ul className="thematic_list">
             <li> Rehabilitation and care for girls living with disability</li>
             <li>Inclusive Education</li>
             <li>
