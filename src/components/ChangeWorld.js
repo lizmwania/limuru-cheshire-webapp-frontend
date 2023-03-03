@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 import img from "../images/change.png";
+import world from "../images/world.png"
+
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -37,12 +39,24 @@ const ChangeWorld = () => {
     >
       <div className="changeworld_content">
         <motion.div className="left_content" variants={item}>
-          <h3>We can Change the World</h3>
-          <h1>Our Mission</h1>
+          <img
+            src={world}
+            style={{
+              width: "50%",
+              height: "auto",
+            }}
+            alt="changeworld"
+          />
+          <h1>Let's Join Hands Together</h1>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis
+            As a community-based empowerment facility for girls living with
+            disabilities, we believe that every girl deserves the opportunity to
+            reach her full potential. That's why we're committed to creating a
+            supportive and inclusive environment where girls can learn, grow,
+            and thrive. By joining hands together, we can empower these girls to
+            overcome the challenges they face and achieve their dreams. With our
+            collaborative efforts, we can build a community that is truly
+            inclusive and empowering for all.
           </p>
           <div className="btn_group">
             <div className="btn btn_primary">
@@ -59,6 +73,19 @@ const ChangeWorld = () => {
           <img src={img} alt="changeworld" />
         </motion.div>
       </div>
+      <p
+        style={{
+          padding: "1.5rem 0",
+          textAlign: "center",
+          color: "#ee3705",
+          fontWeight: "300",
+        }}
+      >
+        <i>
+          And we say thank you for your generous contribution, you have touched
+          a soul and the community at large. <br></br> Thank you!
+        </i>
+      </p>
     </motion.div>
   );
 };

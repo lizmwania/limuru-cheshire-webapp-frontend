@@ -71,19 +71,73 @@ export default function AboutPage() {
       <div className="AboutBannerContainer">
         <img src={AboutBanner} className="AboutBanner" alt="AboutBanner" />
         <div class="AboutCenteredText">
-          <h1>About Us</h1>
+          <h1 className="about_title">About Us</h1>
           <p id="about-para">
             View our facilities and some of our income generating activities
           </p>
         </div>
       </div>
       {/* Facilities */}
-
+      <div className="title">
+        <h2>Who we are</h2>
+      </div>
+      <div className="about_cheshire">
+        <p>
+          <b>Limuru Cheshire Home</b> is a community-based empowerment facility
+          for girls living with disabilities.
+        </p>
+        <p>
+          Founded in <strong> 1972 </strong> by{" "}
+          <strong> Leonard Cheshire</strong>, the home envisions art
+          all-inclusive society where persons living with disabilities are
+          empowered to develop to their full potentials to lead dignified lives.
+        </p>
+        <p>
+          Our four key thematic areas are;
+          <ul className="list">
+            <li> Rehabilitation and care for girls living with disability</li>
+            <li>Inclusive Education</li>
+            <li>
+              Livelihoods and Economic Empowerment through vocational training
+            </li>
+            <li>
+              Lobbying and advocacy for disability-friendly laws and policie
+            </li>
+          </ul>
+          <div className="paras">
+            <p>
+              We admit girls between 12 – 25 years and offer vocational training
+              currently to 56 girls with various forms of disabilities
+              including; mental retardation, hearing impairment, speech
+              impairment, physical disabilities, dyslexia, autism, attention
+              deficient, hyperactive disorders, epilepsy and cerebral palsy.
+              Majority of the girls manifest multiple disorders which is a major
+              challenge for them to fit in the ordinary education system.
+            </p>
+            <p>
+              Limuru Cheshire Home has remained committed to empowering girls
+              living with disabilities. However, the Centre has suffered from
+              gradual erosion of donor support at a time when this is needed
+              most resulting to below par service delivery and sending the girls
+              back home due to lack of financial resources threatens their lives
+              more and exposes them to unthinkable forms of abuses.
+            </p>
+            <p>
+              Access to vocational training empowers them to gain
+              self-confidence and build their esteem, strengthen their voice to
+              speak for themselves and gain economic independence to contribute
+              to their own welfare and that of their families.
+            </p>
+          </div>
+        </p>
+      </div>
+      <div className="title">
+        <h2>Our Facilities</h2>
+      </div>
       <div className="AboutContainer">
         {/* first */}
         <motion.div initial="initial" animate="animate">
           <motion.div
-          
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, ease: easing }}

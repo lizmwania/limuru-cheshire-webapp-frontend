@@ -1,5 +1,5 @@
 
-.pillars, .row {
+.pillars {
     width: 80%;
     margin: 0 auto;
     @media only screen and (min-width: 785px) {
@@ -8,6 +8,7 @@
 }
 .row {
     // display: flex;
+    margin: 1.2rem 0;
 
     @media only screen and (min-width: 785px) {
         
@@ -43,13 +44,23 @@
     
 }
 
-.circle span {
-    font-size: 16px;
-    padding: 8px 12px;
-    background: #f54f0d;
-    color: #FFF;
-    font-size: 1rem;
-    border-radius: 4px; 
+.pillarcontent{
+    display: grid;
+    gap: 1rem;
+    padding-left: 2rem;
+
+}
+.circle  {
+
+    p{
+        color: #FFFFFF;
+        padding:  0.5rem 1rem 1rem 1rem;
+        width: 38px;
+        height: 38px;
+        margin: 0 auto;
+        background-color: #fa5527;
+        border-radius: 2px;
+    }
 }
 
 .Listofpillars {

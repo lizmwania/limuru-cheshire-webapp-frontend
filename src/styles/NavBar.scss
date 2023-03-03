@@ -1,16 +1,22 @@
+.nav-content{
+  width: 100%;
+}
 .Navbar {
-    height: 70px;
-    margin: auto;
+    // height: 70px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    opacity: 99;
+    // opacity: 99;
     overflow: hidden;
-    padding-left: 5%;
-    padding-right: 5%;
+    // padding-left: 5%;
+    width: 80%;
+    margin: 0 auto;
     border-bottom: 1px solid  hsl(240, 100%, 99%);
     
 }
+
+
 
 .Navbar>.nav-logo {
     font-weight: 600;

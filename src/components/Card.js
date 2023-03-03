@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { IconContext } from 'react-icons';
-import { FaCalendar} from 'react-icons/fa';
+import { FaCalendar, FaBookReader, FaPeopleArrows} from "react-icons/fa";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -52,56 +52,77 @@ const hoverEffect = {
 
 const Card = () => {
     return (
-        <motion.div className='service_container'>
-            <div className='title_wrapper'>
-                
-                <motion.h2
-                initial={{y:200, opacity:0}}
-                animate={{y:0, opacity:1}}
-                exit={{opacity:0}}
-                transition={{duration:.5, delay:1}}
-                >
-                    View what we do
-                </motion.h2>
-                <motion.p variants={title}>
-                Lorem ipsum dolor sit amet consectetur. Vitae dignissim montes semper 
-                <br/>
-                at posuere odio tellus ut. Eu pellentesque ac semper sed.
-                </motion.p>
-            </div>
-            <motion.div className='service_card' variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}} >
-                <motion.div className='card' variants={item}>
-                    <motion.span className='service_icon' variants={hoverEffect} whileHover="whileHover" whileTap="whileTap" >
-                        <IconContext.Provider value={{color:'white', size:'25px'}}>
-                            <FaCalendar />
-                        </IconContext.Provider>
-                    </motion.span>
-                    <h3>Education </h3>
-                    <p>Lorem starts here</p>
-                    
-                </motion.div>
-                <motion.div className='card' style={{backgroundColor:'#f54f0d'}} variants={item}>
-                    <motion.span className='service_icon' variants={hoverEffect} whileHover="whileHover" whileTap="whileTap" >
-                        <IconContext.Provider value={{color:'white', size:'25px'}}>
-                            <FaCalendar />
-                        </IconContext.Provider>
-                    </motion.span>
-                    <h3>Education </h3>
-                    <p>Lorem starts here</p>
-                   
-                </motion.div>
-                <motion.div className='card' variants={item}>
-                    <motion.span className='service_icon' variants={hoverEffect} whileHover="whileHover" whileTap="whileTap" >
-                        <IconContext.Provider value={{color:'white', size:'22px'}}>
-                            <FaCalendar />
-                        </IconContext.Provider>
-                    </motion.span>
-                    <h3>Education </h3>
-                    <p>Lorem starts here</p>
-                    
-                </motion.div>
-            </motion.div>
+      <motion.div className="service_container">
+        <div className="title_wrapper">
+          <h2 style={{ color: "rgb(0, 0, 0, 0.8)", fontSize: "2rem" }}>
+            What We Do...
+          </h2>
+          <motion.p variants={title}>
+            We admit girls between 12 – 25 years and offer vocational training
+            currently to 56 girls with various forms of disabilities including;
+            mental retardation, hearing impairment, speech impairment, physical
+            disabilities, dyslexia, autism, attention deficient, hyperactive
+            disorders, epilepsy and cerebral palsy. Majority of the girls
+            manifest multiple disorders which is a major challenge for them to
+            fit in the ordinary education system.
+          </motion.p>
+        </div>
+        <motion.div
+          className="service_card"
+          variants={container}
+          initial="hidden"
+          exit="exit"
+          whileInView="show"
+          viewport={{ once: false }}
+        >
+          <motion.div className="card" variants={item}>
+            <motion.span
+              className="service_icon"
+              variants={hoverEffect}
+              whileHover="whileHover"
+              whileTap="whileTap"
+            >
+              <IconContext.Provider value={{ color: "white", size: "25px" }}>
+                <FaCalendar />
+              </IconContext.Provider>
+            </motion.span>
+            <h3>Advocacy </h3>
+            <p>Lorem starts here</p>
+          </motion.div>
+          <motion.div
+            className="card"
+            style={{ backgroundColor: "#f54f0d" }}
+            variants={item}
+          >
+            <motion.span
+              className="service_icon"
+              variants={hoverEffect}
+              whileHover="whileHover"
+              whileTap="whileTap"
+            >
+              <IconContext.Provider value={{ color: "white", size: "25px" }}>
+                <FaBookReader />
+              </IconContext.Provider>
+            </motion.span>
+            <h3>Education </h3>
+            <p>Lorem starts here</p>
+          </motion.div>
+          <motion.div className="card" variants={item}>
+            <motion.span
+              className="service_icon"
+              variants={hoverEffect}
+              whileHover="whileHover"
+              whileTap="whileTap"
+            >
+              <IconContext.Provider value={{ color: "white", size: "22px" }}>
+                <FaPeopleArrows />
+              </IconContext.Provider>
+            </motion.span>
+            <h3>Respect </h3>
+            <p>Lorem starts here</p>
+          </motion.div>
         </motion.div>
+      </motion.div>
     );
 };
 

@@ -7,69 +7,79 @@ export default function Pillars() {
   return (
     <div className="pillars">
       <div className="row">
-        <div className="">
-          <BsFillPinFill style={{ fontSize: "25px", color: "#f54f0d" }} />
-          <span style={{ fontSize: "1.2rem", color: "#f54f0d" }}>
-            Core Pillars{" "}
-          </span>
+        <div className="pillarcontent">
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <BsFillPinFill
+              style={{
+                fontSize: "1.5rem",
+                color: "#f54f0d",
+                marginRight: "1rem",
+              }}
+            />
+            <span style={{ fontSize: "2rem", fontWeight: "500" }}>
+              Core Pillars{" "}
+            </span>
+          </div>
           <h1 className="PillarPageTitle">
             We believe in the five core pillars that keep us going and guide us
             then it comes to making crucial day to day decisions.{" "}
           </h1>
 
-          <div className="Listofpillars">
-            <div class="circle">
-              <span>1</span>
+          <div style={{paddingLeft:"1.2rem"}}>
+            <div className="Listofpillars">
+              <div class="circle">
+                <p>1</p>
+              </div>
+              <div>
+                <p className="PillarTitle">Advocacy</p>
+                <p className="moreInformation">
+                  We strongly believe in the pillar of unity and helps us unite
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="PillarTitle">Advocacy</p>
-              <p className="moreInformation">
-                We strongly believe in the pillar of unity and helps us unite
-              </p>
+            <div className="Listofpillars">
+              <div class="circle">
+                <p>2</p>
+              </div>
+              <div>
+                <p className="PillarTitle">Inclusion</p>
+                <p className="moreInformation">
+                  We strongly believe in the pillar of unity and helps us unite
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="Listofpillars">
-            <div class="circle">
-              <span>2</span>
+            <div className="Listofpillars">
+              <div class="circle">
+                <p>3</p>
+              </div>
+              <div>
+                <p className="PillarTitle">Respect for diversity</p>
+                <p className="moreInformation">
+                  We strongly believe in the pillar of unity and helps us unite
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="PillarTitle">Inclusion</p>
-              <p className="moreInformation">
-                We strongly believe in the pillar of unity and helps us unite
-              </p>
+            <div className="Listofpillars">
+              <div class="circle">
+                <p>40</p>
+              </div>
+              <div>
+                <p className="PillarTitle">Education</p>
+                <p className="moreInformation">
+                  We strongly believe in the pillar of unity and helps us unite
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="Listofpillars">
-            <div class="circle">
-              <span>3</span>
-            </div>
-            <div>
-              <p className="PillarTitle">Respect for diversity</p>
-              <p className="moreInformation">
-                We strongly believe in the pillar of unity and helps us unite
-              </p>
-            </div>
-          </div>
-          <div className="Listofpillars">
-            <div class="circle">
-              <span>4</span>
-            </div>
-            <div>
-              <p className="PillarTitle">Education</p>
-              <p className="moreInformation">
-                We strongly believe in the pillar of unity and helps us unite
-              </p>
-            </div>
-          </div>
-          <div className="Listofpillars">
-            <div class="circle">
-              <span>5</span>
-            </div>
-            <div>
-              <p className="PillarTitle">The fifth pillar</p>
-              <p className="moreInformation">
-                We strongly believe in the pillar of unity and helps us unite
-              </p>
+            <div className="Listofpillars">
+              <div class="circle">
+                <p>5</p>
+              </div>
+              <div>
+                <p className="PillarTitle">The fifth pillar</p>
+                <p className="moreInformation">
+                  We strongly believe in the pillar of unity and helps us unite
+                </p>
+              </div>
             </div>
           </div>
         </div>

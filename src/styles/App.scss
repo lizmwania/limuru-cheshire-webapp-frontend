@@ -5,7 +5,7 @@
 }
 
 $light_green: #effffa;
-$dark_green: #f54f0d;
+$dark_green: #ee3705;
 $black: #000000;
 $white: #fff;
 
@@ -26,6 +26,22 @@ body {
 
 }
 
+.btn_group {
+
+    .btn {
+
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 0.8rem 1rem;
+
+        &.btn_primary {
+            background-color: $dark_green;
+            color: $white;
+
+
+        }
+    }
+}
 header {
     @extend .dflex;
     justify-content: space-between;
@@ -76,121 +92,105 @@ header {
     }
 }
 
-.content_wrapper {
-    width: 80%;
-    margin: 20px auto 0 auto;
+.banner-container{
+    width: 100%;
+    background-color: #f3f3fe;
+    .content_wrapper {
+            width: 90%;
+            margin: 0 auto;
+             padding: 4rem 0;
+    
+    
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                width: 80%;
+            }
+    
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {}
+    
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {}
+    
+            .left_content_wrapper {
+                // width: 48%;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 0 1rem;
+    
+                // justify-content: space-between;
+    
+    
+                h4 {
+                    color: $dark_green;
+                    font-size: 1.2rem;
+    
+                    @media only screen and (min-width: 768px) {
+                        font-size: 1.5vw;
+                    }
+    
+                    // margin: 50px 30px;
+                    span {
+                        display: inline-block;
+    
+                    }
+                }
+    
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    overflow: hidden;
+    
+                    @media only screen and (min-width: 768px) {
+                        font-size: 2vw;
+                    }
+    
+                    span {
+                        display: inline-block;
+    
+                        // margin-left: 10px;
+                        span.second {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+    
+                p {
+                    font-size: 1rem;
+                    color: #333;
+                    margin: 10px 0 30px 0;
+                }
+    
+               
+    
+                .bg_decor {
+                    position: absolute;
+                    width: 766.31px;
+                    height: 872.58px;
+                    left: 1008px;
+                    top: -102px;
+                }
+            }
+    
+            .right_content_wrapper {
     padding: 1rem;
-    background-color: $light_green;
-
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        width: 90%;
-    }
-
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {}
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
-
-    .left_content_wrapper {
-        // width: 48%;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        // justify-content: space-between;
-
-
-        h4 {
-            color: $dark_green;
-            font-size: 1.2rem;
-
-            @media only screen and (min-width: 768px) {
-                font-size: 1.5vw;
-            }
-
-            // margin: 50px 30px;
-            span {
-                display: inline-block;
-
-            }
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            line-height: 1.3;
-            overflow: hidden;
-
-            @media only screen and (min-width: 768px) {
-                font-size: 2vw;
-            }
-
-            span {
-                display: inline-block;
-
-                // margin-left: 10px;
-                span.second {
-                    margin-left: 15px;
-                }
-            }
-        }
-
-        p {
-            font-size: 1rem;
-            color: #333;
-            margin: 10px 0 30px 0;
-        }
-
-        .btn_group {
-            @extend .dflex;
-            width: fit-content;
-            justify-content: space-between;
-
-            .btn {
-
+                // width: 48%;
                 // @extend .dflex;
-                // width: fit-content;
-                // height: 56px;
-                // font-size: 18px;
-                border-radius: 4px;
-                font-weight: 600;
-
-                &.btn_primary {
-                    background-color: $dark_green;
-                    color: $white;
-
-
+                // justify-content: flex-end;
+                img {
+                    // display: block;
+                    width: 90%;
+                    height: auto;
                 }
             }
+    
         }
-
-        .bg_decor {
-            position: absolute;
-            width: 766.31px;
-            height: 872.58px;
-            left: 1008px;
-            top: -102px;
-        }
-    }
-
-    .right_content_wrapper {
-
-        // width: 48%;
-        // @extend .dflex;
-        // justify-content: flex-end;
-        img {
-            // display: block;
-            width: 100%;
-            height: auto;
-        }
-    }
-
 }
 
 //service container
@@ -198,6 +198,10 @@ header {
     display: block;
     width: 80%;
     margin: 50px auto 0 auto;
+    @media only screen and (min-width:768px) {
+        width: 90%
+    
+        }
 
     .title_wrapper {
         overflow: hidden;
@@ -235,17 +239,16 @@ header {
 }
 
 .service_card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    // justify-content: center;
+    // gap: 1rem;
     width: 80%;
     margin: 3rem auto;
 
-    @media only screen and (min-width: 600px) {
-        flex-direction: row;
-        flex-wrap: wrap;
+    @media only screen and (min-width:768px) {
+       grid-template-columns: 1fr 1fr 1fr;
 
     }
 
@@ -255,9 +258,9 @@ header {
         gap: 10px;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        // width: 250px;
         border: 1px solid #AAAAFF;
-        border-radius: 8px;
+        border-radius: 4px;
         background-color: #AAAAFF;
         background-image: url('../images/service1.png');
         padding: 5.8vw 3.8vw;
@@ -267,7 +270,9 @@ header {
         transition: all .3s ease-in-out;
 
         &:hover {
-            box-shadow: #333 0px 25px 20px -20px;
+            box-shadow: #8f8f8f 0px 25px 20px -20px;
+            // transform: scale(1.1,);
+            margin: 0.5rem;
             cursor: pointer;
             top: -5px;
         }
@@ -307,6 +312,7 @@ header {
     @media only screen and (min-width: 785px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
 
@@ -335,28 +341,7 @@ header {
             font-weight: 300;
         }
 
-        .btn_group {
-            @extend .dflex;
-            width: fit-content;
-            justify-content: space-between;
-
-            .btn {
-
-                // @extend .dflex;
-                // width: fit-content;
-                // height: 56px;
-                // font-size: 18px;
-                border-radius: 4px;
-                font-weight: 600;
-
-                &.btn_primary {
-                    background-color: $dark_green;
-                    color: $white;
-
-
-                }
-            }
-        }
+       
     }
 
     .right_content {
@@ -386,9 +371,25 @@ header {
         flex-direction: row;
 
         .right_content {
-            width: 80%
+            width: 80%;
+            
+            .tabs{
+                display: flex;
+                gap: 1rem;
+                margin: 1rem 0;
+            }
+
         }
     }
+
+        .btn_primary_bordered {
+            background-color: transparent;
+            border: 1px solid $dark_green;
+            color: #232526;
+            &:hover{
+border: 1px solid $dark_green;
+            }
+        }
 
     // @extend .dflex;
     // justify-content: space-between;
@@ -410,7 +411,7 @@ header {
         // width: 40%;
         h3 {
             color: $dark_green;
-            font-size: 17px;
+            font-size: 2rem;
 
         }
 
@@ -427,31 +428,7 @@ header {
             font-weight: 300;
         }
 
-        .btn_group {
-            padding-top: 1rem;
-            @extend .dflex;
-            width: 100%;
-            justify-content: space-between;
-            gap: 1rem;
-
-            .btn {
-                @extend .dflex;
-
-                // width: fit-content;
-                height: 46px;
-                font-size: 16px;
-                border-radius: 8px;
-                font-weight: 500;
-
-                &.btn_primary {
-                    background-color: $white;
-                    color: $black;
-                    border: 1px solid $dark_green;
-
-
-                }
-            }
-        }
+       
     }
 
 }
@@ -466,8 +443,9 @@ header {
     // align-items: center;
     // margin-bottom: 20px;
     @media only screen and (min-width: 768px) {
-        display: flex;
-        gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         justify-content: space-between;
         align-items: start;
     }
@@ -495,9 +473,8 @@ header {
 
     .right_content {
         // width: 40%;
-        @extend .dflex;
-        justify-content: flex-end;
-        flex-direction: column;
+       display: grid;
+       gap:1rem;
 
         p {
             margin-top: 20px;
@@ -508,7 +485,7 @@ header {
 
         .review_container {
             @extend .dflex;
-            margin: 20px;
+            gap: 1rem;
             flex-direction: row;
 
             p.review_item {
@@ -536,32 +513,32 @@ header {
             }
         }
 
-        .btn_group {
-            @extend .dflex;
-            width: fit-content;
-            //    justify-content: space-between;
-            align-self: start;
-
-            .btn {
-
-                // @extend .dflex;
-                // width: fit-content;
-                // height: 56px;
-                // font-size: 18px;
-                border-radius: 4px;
-                font-weight: 600;
-
-                &.btn_primary {
-                    background-color: $dark_green;
-                    color: $white;
-
-
-                }
-            }
-        }
+       
 
     }
 
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+    // li{
+    //     list-style: disc;
+    //    
+    // }
+        li::before {
+            content: "";
+                display: inline-block;
+                width: 0.5em;
+                height: 0.5em;
+                margin-right: 0.5em;
+                border-radius: 50%;
+                background-color: red;
+        
+        }
 }
 
 .decor_content {
@@ -621,28 +598,7 @@ header {
             font-weight: 300;
         }
 
-        .btn_group {
-            @extend .dflex;
-            width: fit-content;
-            justify-content: space-between;
-
-            .btn {
-
-                // @extend .dflex;
-                // width: fit-content;
-                // height: 56px;
-                // font-size: 18px;
-                border-radius: 4px;
-                font-weight: 600;
-
-                &.btn_primary {
-                    background-color: $dark_green;
-                    color: $white;
-
-
-                }
-            }
-        }
+       
     }
 
     .right_content {
@@ -675,6 +631,7 @@ header {
             justify-content: center;
             text-align: center;
             gap: 1rem;
+            margin-top: 1rem;
             
         // overflow: hidden;
         p {
@@ -700,26 +657,5 @@ header {
         }
     }
 
-          .btn_group {
-            //   @extend .dflex;
-            //   width: fit-content;
-            //   justify-content: center;
-    
-              .btn {
-    
-                  // @extend .dflex;
-                  // width: fit-content;
-                  // height: 56px;
-                  // font-size: 18px;
-                  border-radius: 4px;
-                  font-weight: 600;
-    
-                  &.btn_primary {
-                      background-color: $dark_green;
-                      color: $white;
-    
-    
-                  }
-              }
-          }
+          
 }

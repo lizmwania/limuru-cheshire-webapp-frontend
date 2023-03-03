@@ -2,6 +2,7 @@ import React, {useState } from "react";
 import { animate, motion } from "framer-motion";
 import '../styles/NavBar.scss'
 import { AiFillHeart } from "react-icons/ai";
+import logo from "../images/logo.svg"
 
 let easing = [0.6,-0.05, 0.01, 0.99];
 
@@ -108,11 +109,9 @@ export default function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div initial='initial' animate='animate'>
+    <motion.div className ="nav-content" initial='initial' animate='animate'>
       <motion.div className="Navbar" variants={stagger}>
-        <motion.a href="/" className="nav-logo" variants={header}>
-          Limuru Cheshire
-        </motion.a>
+        <img  src={logo} alt="logo"/>
         <motion.div className={`nav-items ${isOpen && "open"}`} variants={stagger}>
           <motion.a href="/">Home </motion.a>
           <motion.a href="/about">About</motion.a>

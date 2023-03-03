@@ -52,25 +52,37 @@ const stagger = {
 
 const About = () => {
     return (
-        <motion.div className='about_container' variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
-            <motion.div className='left_content' variants={item}>
-                <motion.h3 variants={stagger}>About Us</motion.h3>
-                <h1>Our Mission</h1>
-                <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                </p>
-                <div className='btn_group'>
-                    <div className='btn btn_primary'>
-                        Learn More
-                    </div>
-                </div>
-            </motion.div>
-            <motion.div className='right_content' variants={item}>
-                <img src={img}  alt='aboutus' />
-            </motion.div>
-            
+      <motion.div
+        className="about_container"
+        variants={container}
+        initial="hidden"
+        exit="exit"
+        whileInView="show"
+        viewport={{ once: false }}
+      >
+        <motion.div className="left_content" variants={item}>
+          <motion.h3 variants={stagger}>About Us</motion.h3>
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to foster holistic empowerment for girls living with
+            disabilities, with the aim of integrating them into society. We
+            believe that by providing access to education, training, and
+            resources, we can equip these girls with the skills and confidence
+            they need to lead fulfilling lives. We are committed to promoting
+            economic empowerment through our programs, enabling girls to become
+            financially independent and to contribute to their communities. Our
+            goal is to create a more inclusive and accepting society that values
+            diversity and celebrates the unique strengths and abilities of every
+            girl living with disabilities.
+          </p>
+          {/* <div className="btn_group">
+            <div className="btn btn_primary">Learn More</div>
+          </div> */}
         </motion.div>
+        <motion.div className="right_content" variants={item}>
+          <img src={img} alt="aboutus" />
+        </motion.div>
+      </motion.div>
     );
 }
 
