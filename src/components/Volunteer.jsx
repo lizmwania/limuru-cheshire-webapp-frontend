@@ -103,7 +103,7 @@ const Volunteer = () => {
             </div>
           </div> */}
           <div className="btn_group">
-            <div className="btn btn_primary">Become a Volunteer</div>
+            <a href="/volunteer" className="btn btn_primary">Become a Volunteer</a>
           </div>
         </motion.div>
       </motion.div>

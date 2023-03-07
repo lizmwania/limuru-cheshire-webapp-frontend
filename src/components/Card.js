@@ -87,7 +87,7 @@ const Card = () => {
               </IconContext.Provider>
             </motion.span>
             <h3>Advocacy </h3>
-            <p>Lorem starts here</p>
+            <p>At Limuru Cheshire, we are dedicated to advocating for the rights and needs of people living with disabilities.</p>
           </motion.div>
           <motion.div
             className="card"
@@ -105,7 +105,7 @@ const Card = () => {
               </IconContext.Provider>
             </motion.span>
             <h3>Education </h3>
-            <p>Lorem starts here</p>
+            <p>We believe that education is a fundamental human right and that it has the power to transform lives and communities</p>
           </motion.div>
           <motion.div className="card" variants={item}>
             <motion.span
@@ -119,7 +119,7 @@ const Card = () => {
               </IconContext.Provider>
             </motion.span>
             <h3>Respect </h3>
-            <p>Lorem starts here</p>
+            <p>Respect for all individuals, regardless of their race, ethnicity, gender, disabilities, or any other characteristic</p>
           </motion.div>
         </motion.div>
       </motion.div>

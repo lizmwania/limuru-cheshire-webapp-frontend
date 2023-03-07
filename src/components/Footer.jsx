@@ -34,7 +34,7 @@ export default function Footer() {
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
                   <a href="/volunteer">Work with us</a>
@@ -43,7 +43,7 @@ export default function Footer() {
                   <a href="/impact">Impact Stories</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="/contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -51,16 +51,16 @@ export default function Footer() {
               <h4>Get Involved</h4>
               <ul>
                 <li>
-                  <a href="#">Partner with us</a>
+                  <a href="/volunteer">Partner with us</a>
                 </li>
                 <li>
-                  <a href="#">Volunteer</a>
+                  <a href="/volunteer">Volunteer/Intership</a>
                 </li>
                 <li>
-                  <a href="#">Volunteer/Intership</a>
+                  <a href="/tour">Tour the Village </a>
                 </li>
                 <li>
-                  <a href="#">Donations</a>
+                  <a href="/donate">Donations</a>
                 </li>
               </ul>
             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
               <h4>Projects</h4>
               <ul>
                 <li>
-                  <a href="#">Clothes Sewing</a>
+                  <a href="#">Beadwork Design</a>
                 </li>
                 <li>
                   <a href="#">Poulty farming</a>
@@ -78,7 +78,7 @@ export default function Footer() {
                   <a href="#">Crop Farming</a>
                 </li>
                 <li>
-                  <a href="#">Hair dressing</a>
+                  <a href="#">Baking</a>
                 </li>
               </ul>
             </div>
@@ -92,24 +92,11 @@ export default function Footer() {
                     style={{ height: 25, width: 25 }}
                   />
                 </a>
+                
                 <a href="#" target="_blank" rel="noreferrer">
                   {" "}
                   <SocialIcon
-                    network="whatsapp"
-                    style={{ height: 25, width: 25 }}
-                  />
-                </a>
-                <a href="#" target="_blank" rel="noreferrer">
-                  {" "}
-                  <SocialIcon
-                    network="twitter"
-                    style={{ height: 25, width: 25 }}
-                  />
-                </a>
-                <a href="#" target="_blank" rel="noreferrer">
-                  {" "}
-                  <SocialIcon
-                    network="tiktok"
+                    network="facebook"
                     style={{ height: 25, width: 25 }}
                   />
                 </a>

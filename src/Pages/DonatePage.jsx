@@ -57,7 +57,7 @@ export default function DonatePage() {
           <div className="card-body">
             <h5 className="donationTitle">Visiting</h5>
             <p className="donationDescription">
-              You can visit to share life with the gils and encourage them.
+              You can visit to share life with the girls and encourage them.
               Small acts like visiting the girls and talking to them will go a
               long way in helping them.
             </p>

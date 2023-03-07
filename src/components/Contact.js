@@ -9,7 +9,7 @@ const Contact = () => {
           <Fade>
             <h2>Get in touch with us.</h2>
             <div className="btn_group">
-              <div className="btn btn_primary">Contact Us</div>
+              <a href="contact" className="btn btn_primary">Contact Us</a>
             </div>
           </Fade>
         </div>

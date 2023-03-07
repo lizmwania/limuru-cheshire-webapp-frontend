@@ -126,14 +126,15 @@ const Banner = () => {
             </h4>
 
             <motion.div className="btn_group" variants={stagger}>
-              <motion.div
+              <motion.a
+              href="/donate"
                 className="btn btn_primary"
                 variants={btnGroup}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Donate 
-              </motion.div>
+              </motion.a>
             </motion.div>
           </div>
 

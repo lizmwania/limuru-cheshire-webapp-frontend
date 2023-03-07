@@ -59,14 +59,15 @@ const ChangeWorld = () => {
             inclusive and empowering for all.
           </p>
           <div className="btn_group">
-            <div className="btn btn_primary">
+            <a className="btn btn_primary" href="/donate">
+
               <FaHeart
                 style={{
                   marginRight: ".5rem",
                 }}
               />
               Donate
-            </div>
+            </a>
           </div>
         </motion.div>
         <motion.div className="right_content" variants={item}>
