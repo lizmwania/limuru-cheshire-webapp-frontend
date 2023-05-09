@@ -148,31 +148,29 @@ export default function AboutPage() {
                   <strong>Classrooms</strong>
                 </h3>
 
-                <p class="facilities-content-text">
+                {/* <p class="facilities-content-text">
                   We have modern classrooms that are equiped with state of the
                   art .....
-                </p>
+                </p> */}
 
                 <ul class="facilities-list">
                   <li class="facilities-list-item">
                     <p>
                       <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      Our classrooms provide a comfortable space for our girls to learn and grow. 
                     </p>
                   </li>
                   <li class="facilities-list-item">
                     <p>
                       <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      We have skilled teachers who are dedicated to ensuring each girl receives individualized attention and support. 
                     </p>
                   </li>
                   <li class="facilities-list-item">
                     <p>
                       <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      Our classrooms are equipped with modern teaching aids to enhance learning and engagement.
+
                     </p>
                   </li>
                 </ul>
@@ -183,6 +181,7 @@ export default function AboutPage() {
             </div>
           </motion.div>
         </motion.div>
+        <br/>
         <div class="facilities-wrapper">
           <figure class="facilities-banner">
             <img src={AboutDorm} alt="svg" />
@@ -193,31 +192,23 @@ export default function AboutPage() {
               <strong>Dormitories </strong>
             </h3>
 
-            <p class="facilities-content-text">
-              We have modern dormitories that are equiped with state of the art
-              .....
-            </p>
-
             <ul class="facilities-list">
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Our dormitories are designed to provide a safe and supportive home away from home for our students.
                 </p>
               </li>
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  We have taken measures to ensure the safety and wellbeing of our students, including strict security protocols and regular health and safety checks. 
                 </p>
               </li>
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Our caring and experienced staff are available around the clock to provide support and care to the girls. 
                 </p>
               </li>
             </ul>
@@ -234,31 +225,25 @@ export default function AboutPage() {
               <strong>Our Offices</strong>
             </h3>
 
-            <p class="facilities-content-text">
-              We have modern offices that are equiped with state of the art that
-              .....
-            </p>
+
 
             <ul class="facilities-list">
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Our offices are welcoming spaces where our staff work hard to ensure the smooth running of our institution.
                 </p>
               </li>
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  We have modern technology to help us communicate and manage our programs and activities.
                 </p>
               </li>
               <li class="facilities-list-item">
                 <p>
                   <BsCaretRightFill style={{ color: "#f54f0d" }} />
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Our friendly staff are always ready to assist visitors, parents, and students with their needs. 
                 </p>
               </li>
             </ul>

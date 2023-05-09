@@ -9,7 +9,10 @@ export default function ImpactStories() {
     <div className="ImpactStoriesSection">
       <h2 className="ImpactStoriesTitle">Impact Stories</h2>
       <br />
-      <ImpactStoriesMenu menuItem={menuItem} />
+      {/* <ImpactStoriesMenu menuItem={menuItem} /> */}
+      <br/>
+      <p style={{textAlign: "center", color: "red"}}>Check back soon for Impact Stories!</p>
+      <br/>   <br/>   <br/>
     </div>
   );
 }
