@@ -78,7 +78,7 @@ export default function Footer() {
                   <a href="#">Crop Farming</a>
                 </li>
                 <li>
-                  <a href="#">Baking</a>
+                  <a href="#">Catering</a>
                 </li>
               </ul>
             </div>
